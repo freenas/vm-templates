@@ -7,7 +7,7 @@
         "ncpus": 1,
         "bootloader": "BHYVELOAD",
         "memsize": 1024,
-        "boot_disk": "os"
+        "boot_device": "os"
     },
     "devices" : [
         {
@@ -31,4 +31,3 @@
     ],
     "type": "VM"
 }
-    
