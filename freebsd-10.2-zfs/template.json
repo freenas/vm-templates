@@ -1,0 +1,34 @@
+{
+    "template": {
+        "name": "freebsd-10.2-zfs",
+        "author": "Jakub Klama <jakub@ixsystems.com>"
+    },
+    "config" : {
+        "ncpus": 1,
+        "bootloader": "BHYVELOAD",
+        "memsize": 1024,
+        "boot_disk": "os"
+    },
+    "devices" : [
+        {
+            "type": "DISK",
+            "name": "os",
+            "properties": {
+                "size": "4G",
+                "source": {
+                    "url": "http://polandball.ixsystems.com/vm-templates/freebsd-10.2-zfs/os.img.gz",
+                    "sha256": "03eb1f907e6f631c4a021f6a01a89fbaedc4cb50ad890dbdad9ab243861dd0b5"
+                }
+            }
+        },
+        {
+            "type": "NIC",
+            "name": "nic",
+            "properties" : {
+                "type": "NAT"
+            }
+        }
+    ],
+    "type": "VM"
+}
+    
