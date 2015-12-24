@@ -1,7 +1,8 @@
 {
     "template": {
         "name": "freebsd-10.2-zfs",
-        "author": "Jakub Klama <jakub@ixsystems.com>"
+        "author": "Jakub Klama <jakub@ixsystems.com>",
+        "description": "FreeBSD 10.2 image with root on ZFS"
     },
     "config" : {
         "ncpus": 1,
