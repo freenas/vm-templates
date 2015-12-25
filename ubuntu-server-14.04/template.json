@@ -1,0 +1,35 @@
+{
+    "template": {
+        "name": "ubuntu-server-14.04",
+        "author": "Jakub Klama <jakub@ixsystems.com>",
+        "description": "Ubuntu Server 14.04"
+    },
+    "config" : {
+        "ncpus": 1,
+        "bootloader": "GRUB",
+        "memsize": 1024,
+        "boot_device": "os",
+        "boot_partition": "msdos1"
+    },
+    "devices" : [
+        {
+            "type": "DISK",
+            "name": "os",
+            "properties": {
+                "size": "4G",
+                "source": {
+                    "url": "http://polandball.ixsystems.com/vm-templates/ubuntu-server-14.04/os.img.gz",
+                    "sha256": "3af86be2c7d7714e5917cf3610e6760d2c199e42ab0200d0b294e3a145e0fa78"
+                }
+            }
+        },
+        {
+            "type": "NIC",
+            "name": "nic",
+            "properties" : {
+                "type": "NAT"
+            }
+        }
+    ],
+    "type": "VM"
+}
