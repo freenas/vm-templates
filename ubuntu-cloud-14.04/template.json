@@ -1,0 +1,42 @@
+{
+    "template": {
+        "name": "ubuntu-cloud-14.04",
+        "author": "Jakub Klama <jakub@ixsystems.com>",
+        "description": "Ubuntu Cloud Edition 14.04"
+    },
+    "config": {
+        "ncpus": 1,
+        "bootloader": "GRUB",
+        "memsize": 1024,
+        "boot_device": "os",
+        "boot_partition": "msdos1"
+    },
+    "devices": [
+        {
+            "type": "DISK",
+            "name": "os",
+            "properties": {
+                "size": "4G",
+                "source": {
+                    "url": "http://polandball.ixsystems.com/vm-templates/ubuntu-cloud-14.04/os.img.gz",
+                    "sha256": "7aedc5c506bea0e2badab1f14e00c500f2f3430534eccf02e7aa57298ca33cf0"
+                }
+            }
+        },
+        {
+            "type": "NIC",
+            "name": "mgmt",
+            "properties" : {
+                "type": "MANAGEMENT"
+            }
+        },
+        {
+            "type": "NIC",
+            "name": "nat",
+            "properties" : {
+                "type": "NAT"
+            }
+        },
+    ],
+    "type": "VM"
+}
