@@ -4,14 +4,14 @@
         "author": "Jakub Klama <jakub@ixsystems.com>",
         "description": "Ubuntu Server 14.04"
     },
-    "config" : {
+    "config": {
         "ncpus": 1,
         "bootloader": "GRUB",
         "memsize": 1024,
         "boot_device": "os",
         "boot_partition": "msdos1"
     },
-    "devices" : [
+    "devices": [
         {
             "type": "DISK",
             "name": "os",
