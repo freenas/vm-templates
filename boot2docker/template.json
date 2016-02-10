@@ -1,0 +1,45 @@
+{
+    "template": {
+        "name": "boot2docker",
+        "author": "Jakub Klama <jakub@ixsystems.com>",
+        "description": "boot2docker Docker host for FreeNAS",
+        "files": true,
+        "fetch": [
+            {
+                "url": "http://polandball.ixsystems.com/vm-templates/boot2docker/vmlinuz64",
+                "sha256": null,
+                "dest": "grub/vmlinuz64"
+            },
+            {
+                "url": "http://polandball.ixsystems.com/vm-templates/boot2docker/initrd",
+                "sha256": null,
+                "dest": "grub/initrd"
+            }
+        ]
+    },
+    "config": {
+        "docker_host": true,
+        "ncpus": 1,
+        "bootloader": "GRUB",
+        "memsize": 2048,
+        "boot_directory": "grub"
+    },
+    "devices" : [
+        {
+            "type": "NIC",
+            "name": "mgmt",
+            "properties" : {
+                "type": "MANAGEMENT"
+            }
+        },        
+        {
+            "type": "VOLUME",
+            "name": "mnt",
+            "properties": {
+                "type": "9P",
+                "destination": "/mnt"
+            }
+        }
+    ],
+    "type": "VM"
+}
