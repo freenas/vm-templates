@@ -1,0 +1,34 @@
+{
+    "template": {
+        "name": "freebsd-11-zfs",
+        "author": "Jordan Hubbard <jkh@ixsystems.com>",
+        "description": "FreeBSD 11-current image with root on ZFS"
+    },
+    "config" : {
+        "ncpus": 1,
+        "bootloader": "BHYVELOAD",
+        "memsize": 1024,
+        "boot_device": "os"
+    },
+    "devices" : [
+        {
+            "type": "DISK",
+            "name": "os",
+            "properties": {
+                "size": "16G",
+                "source": {
+                    "url": "http://polandball.ixsystems.com/vm-templates/freebsd-11-zfs/os.img.gz",
+                    "sha256": "0d4c75a12baf17f0e6d81f839299f258a3aac40f2de3f7b3162196558cbeff40"
+                }
+            }
+        },
+        {
+            "type": "NIC",
+            "name": "nic",
+            "properties" : {
+                "type": "NAT"
+            }
+        }
+    ],
+    "type": "VM"
+}
