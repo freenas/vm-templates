@@ -31,19 +31,17 @@ ifconfig bridge0 up
 
 # Now make a 16gb image file for the HD - this is referenced later, too.
 truncate -s 16g disk.img
-
-# Now run bhyve's helpful vmrun.sh script to start things off.
+```
+* Then I ran bhyve's helpful vmrun.sh script to start things off.
+```
 sh /usr/share/examples/bhyve/vmrun.sh -c 1 -m 1024M -t tap0 -d disk.img -i -I FreeBSD-11.0-CURRENT-amd64-20160518-r300097-disc1.iso freebsd-current
 ```
-
 * At this point, FreeBSD's standard installer ran, the appropriate ZFS installation options were chosen, and I exited bhyve by selecting the loader prompt on the next reboot and typing "quit".  This dropped me back to the shell on the host OS, where I was next able to do:
-
 ```
 mv disk.img os.img
 gzip -9 os.img
 ```
-
-This little rename/compress step was just to conform with the same naming conventions as my source template, at which point I then edited the ```template.json``` file in my new freebsd-11-zfs direcory to correctly reference this new image, I uploaded the os.img.gz file to the location specified in the ```url``` field (which could be any HTTP server you have access to) and filled in the ```sha256``` checksum field by running ```shasum -a 256 os.img.gz``` and pasting in the results.
+This last little rename/compress step was just to conform with the same naming conventions as my source template, at which point I then edited the ```template.json``` file in my new freebsd-11-zfs direcory to correctly reference this new image and edited some of the book-keeping fields to match, then I uploaded the os.img.gz file to the location specified in the ```url``` field (which could be any HTTP server you have access to) and filled in the ```sha256``` checksum field by running ```shasum -a 256 os.img.gz``` and pasting in the results.
 
 * Finally, I committed the result to github with a git commit / git push, since as a FreeNAS committer I have write access (non-freenas project members would send us a pull request), and voila!  My FreeNAS 10 CLI now shows:
 
