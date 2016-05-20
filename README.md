@@ -9,13 +9,16 @@ starting image.  I also used bhyve running on FreeBSD 10.3 as the bootstrap
 host, though some folks have reported good results with xhyve on the Mac.
 
 * First, obviously, I needed to check out the vm-templates repo:
-** ```git clone https://github.com/freenas/vm-templates.git```
+```
+git clone https://github.com/freenas/vm-templates.git
+```
 
 * Next, I copied a template that looked the most like my target template.  In my case, it was obvious enough to simply duplicate the 10.2-zfs template for FreeBSD (a 10.2 install with the ZFS option selected).
-** ```cp -pr freebsd-10.2-zfs freebsd-11-zfs```
+```
+cp -pr freebsd-10.2-zfs freebsd-11-zfs
+```
 
 * Then I grabbed the ISO installation image from ftp.freebsd.org, as linked above, and started the steps to get bhyve ready to boot it:
-
 ```
 # make a 16gb image file for the HD - this is import later, too.
 truncate -s 16g disk.img
