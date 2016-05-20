@@ -19,8 +19,7 @@ host, though some folks have reported good results with xhyve on the Mac.
 ```
 # make a 16gb image file for the HD - this is import later, too.
 truncate -s 16g disk.img
-```
-```
+
 # start bhyve on that image, using the path to the FreeBSD-current ISO I
 # downloaded earlier:
 
@@ -55,7 +54,7 @@ access to) and filled in the ```sha256``` checksum field by running
 ```shasum -a 256 os.img.gz``` and pasting in the results.
 
 * Finally, I committed the result to github with a git commit / git push,
-since I have write access (non-freenas project members would send us a pool
+since I have write access (non-freenas project members would send us a pull
 request), and voila!  My FreeNAS 10 CLI now shows:
 
 ```
