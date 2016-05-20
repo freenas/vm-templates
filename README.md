@@ -9,17 +9,18 @@ starting image.  I also used bhyve running on FreeBSD 10.3 as the bootstrap
 host, though some folks have reported good results with xhyve on the Mac.
 
 * First, obviously, I needed to check out the vm-templates repo:
-```git clone https://github.com/freenas/vm-templates.git```
+** ```git clone https://github.com/freenas/vm-templates.git```
 
 * Next, I copied a template that looked the most like my target template.  In my case, it was obvious enough to simply duplicate the 10.2-zfs template for FreeBSD (a 10.2 install with the ZFS option selected).
-```cp -pr freebsd-10.2-zfs freebsd-11-zfs```
+** ```cp -pr freebsd-10.2-zfs freebsd-11-zfs```
 
-* Then I grabbed the ISO installation image from ftp.freebsd.org, as linked above, and started the steps to get bhyve ready to boot it.
+* Then I grabbed the ISO installation image from ftp.freebsd.org, as linked above, and started the steps to get bhyve ready to boot it:
 
-* ```
+```
 # make a 16gb image file for the HD - this is import later, too.
 truncate -s 16g disk.img
-
+```
+```
 # start bhyve on that image, using the path to the FreeBSD-current ISO I
 # downloaded earlier:
 
@@ -35,12 +36,12 @@ ifconfig bridge0 up
 sh /usr/share/examples/bhyve/vmrun.sh -c 1 -m 1024M -t tap0 -d disk.img -i -I FreeBSD-11.0-CURRENT-amd64-20160518-r300097-disc1.iso freebsd-current
 ```
 
-At this point, FreeBSD's standard installer ran, the appropriate ZFS install
+* At this point, FreeBSD's standard installer ran, the appropriate ZFS install
 options were chosen, and I exited bhyve by selecting the loader prompt on
 the next reboot and typing "quit".  This dropped me back to the shell on the
 host OS, where I was next able to do:
 
-* ```
+```
 mv disk.img os.img
 gzip -9 os.img
 ```
@@ -79,6 +80,3 @@ unix::>vm bleedingedge console
 ```
 
 Login is a root (no password), tada!  Running FreeBSD-current from this new template.
-
-
-
