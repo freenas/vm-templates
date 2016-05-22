@@ -6,12 +6,12 @@
         "files": true,
         "fetch": [
             {
-                "url": "http://polandball.ixsystems.com/vm-templates/boot2docker/vmlinuz64",
+                "url": "http://download.freenas.org/vm-templates/boot2docker/vmlinuz64",
                 "sha256": null,
                 "dest": "grub/vmlinuz64"
             },
             {
-                "url": "http://polandball.ixsystems.com/vm-templates/boot2docker/initrd",
+                "url": "http://download.freenas.org/vm-templates/boot2docker/initrd",
                 "sha256": null,
                 "dest": "grub/initrd"
             }

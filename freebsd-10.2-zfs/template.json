@@ -18,7 +18,7 @@
                 "size": "4G",
                 "mode": "AHCI",
                 "source": {
-                    "url": "http://polandball.ixsystems.com/vm-templates/freebsd-10.2-zfs/os.img.gz",
+                    "url": "http://download.freenas.org/vm-templates/freebsd-10.2-zfs/os.img.gz",
                     "sha256": "03eb1f907e6f631c4a021f6a01a89fbaedc4cb50ad890dbdad9ab243861dd0b5"
                 }
             }
