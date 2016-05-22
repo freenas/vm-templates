@@ -45,7 +45,8 @@
             "name": "mnt",
             "properties": {
                 "type": "VT9P",
-                "destination": "/mnt"
+                "destination": "/mnt",
+                "auto": false
             }
         }
     ],
