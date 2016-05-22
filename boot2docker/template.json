@@ -31,12 +31,20 @@
             "properties" : {
                 "type": "MANAGEMENT"
             }
-        },        
+        },
+        {
+            "type": "VOLUME",
+            "name": "docker",
+            "properties": {
+                "type": "VT9P",
+                "auto": true
+            }
+        },
         {
             "type": "VOLUME",
             "name": "mnt",
             "properties": {
-                "type": "9P",
+                "type": "VT9P",
                 "destination": "/mnt"
             }
         }

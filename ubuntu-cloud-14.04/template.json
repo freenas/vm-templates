@@ -17,6 +17,7 @@
             "name": "os",
             "properties": {
                 "size": "4G",
+                "mode": "AHCI",
                 "source": {
                     "url": "http://polandball.ixsystems.com/vm-templates/ubuntu-cloud-14.04/os.img.gz",
                     "sha256": "7aedc5c506bea0e2badab1f14e00c500f2f3430534eccf02e7aa57298ca33cf0"

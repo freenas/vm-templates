@@ -16,6 +16,7 @@
             "name": "os",
             "properties": {
                 "size": "16G",
+                "mode": "VIRTIO",
                 "source": {
                     "url": "http://polandball.ixsystems.com/vm-templates/freebsd-11-zfs/os.img.gz",
                     "sha256": "0d4c75a12baf17f0e6d81f839299f258a3aac40f2de3f7b3162196558cbeff40"
