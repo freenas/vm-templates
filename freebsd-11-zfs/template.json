@@ -19,7 +19,7 @@
                 "mode": "VIRTIO",
                 "source": {
                     "url": "http://download.freenas.org/vm-templates/freebsd-11-zfs/os.img.gz",
-                    "sha256": "0d4c75a12baf17f0e6d81f839299f258a3aac40f2de3f7b3162196558cbeff40"
+                    "sha256": "8c6e9b0a2e60f61a4aabbd4a81156f3c0022d5d63a836798efae1c7894bab435"
                 }
             }
         },
