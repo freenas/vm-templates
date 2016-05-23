@@ -3,8 +3,8 @@
         "name": "ubuntu-cloud-14.04",
         "author": "Jakub Klama <jakub@ixsystems.com>",
         "description": "Ubuntu Cloud Edition 14.04",
-        "created_at": {"$date": "2016-02-03T15:12:49+01:00"},
-        "updated_at": {"$date": "2016-05-22T17:03:00+02:00"}
+        "created_at": {"$date": "2016-02-03T16:12:49"},
+        "updated_at": {"$date": "2016-05-22T19:03:00"}
     },
     "config": {
         "ncpus": 1,
