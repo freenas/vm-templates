@@ -2,7 +2,9 @@
     "template": {
         "name": "freebsd-11-zfs",
         "author": "Jordan Hubbard <jkh@ixsystems.com>",
-        "description": "FreeBSD 11-20160518-r300097 image with root on ZFS"
+        "description": "FreeBSD 11-20160518-r300097 image with root on ZFS",
+        "created_at": {"$date": "2016-04-22T16:15:12-07:00"},
+        "updated_at": {"$date": "2016-05-22T17:03:00+02:00"}
     },
     "config" : {
         "ncpus": 1,

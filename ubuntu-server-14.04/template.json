@@ -2,7 +2,9 @@
     "template": {
         "name": "ubuntu-server-14.04",
         "author": "Jakub Klama <jakub@ixsystems.com>",
-        "description": "Ubuntu Server 14.04"
+        "description": "Ubuntu Server 14.04",
+        "created_at": {"$date": "2015-12-25T01:38:27+01:00"},
+        "updated_at": {"$date": "2016-05-22T17:03:00+02:00"}
     },
     "config": {
         "ncpus": 1,

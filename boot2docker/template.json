@@ -3,6 +3,8 @@
         "name": "boot2docker",
         "author": "Jakub Klama <jakub@ixsystems.com>",
         "description": "boot2docker Docker host for FreeNAS",
+        "created_at": {"$date": "2016-02-10T21:45:38+01:00"},
+        "updated_at": {"$date": "2016-05-22T17:03:00+02:00"},
         "files": true,
         "fetch": [
             {
