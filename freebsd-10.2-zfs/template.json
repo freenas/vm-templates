@@ -2,7 +2,9 @@
     "template": {
         "name": "freebsd-10.2-zfs",
         "author": "Jakub Klama <jakub@ixsystems.com>",
-        "description": "FreeBSD 10.2 image with root on ZFS"
+        "description": "FreeBSD 10.2 image with root on ZFS",
+        "created_at": {"$date": "2015-12-24T15:53:48"},
+        "updated_at": {"$date": "2016-05-22T19:03:00"}
     },
     "config" : {
         "ncpus": 1,
