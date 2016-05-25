@@ -25,7 +25,7 @@
             "type": "DISK",
             "name": "os",
             "properties": {
-                "size": "4G",
+                "size": "8G",
                 "mode": "AHCI",
                 "source": {
                     "url": "http://polandball.ixsystems.com/vm-templates/centos-7-1511/os.img.gz",
