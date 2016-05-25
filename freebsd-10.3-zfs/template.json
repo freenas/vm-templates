@@ -17,7 +17,7 @@
             "type": "DISK",
             "name": "os",
             "properties": {
-                "size": "4G",
+                "size": "16G",
                 "mode": "AHCI",
                 "source": {
                     "url": "http://download.freenas.org/vm-templates/freebsd-10.3-zfs/os.img.gz",
