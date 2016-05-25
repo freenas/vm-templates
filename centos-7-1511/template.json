@@ -1,0 +1,38 @@
+{
+    "template": {
+        "name": "centos-7-1511",
+        "author": "Wojciech Kloska <shangteus@ixsystems.com>",
+        "description": "Centos 7 image",
+        "created_at": {"$date": "2016-05-25T19:20:00"},
+        "updated_at": {"$date": "2016-05-25T19:20:00"},
+        "files": true
+    },
+    "config": {
+        "ncpus": 1,
+        "bootloader": "GRUB",
+        "memsize": 1024,
+        "boot_directory": "grub"
+    },
+    "devices" : [
+        {
+            "type": "NIC",
+            "name": "nic",
+            "properties" : {
+                "type": "NAT"
+            }
+        },
+        {
+            "type": "DISK",
+            "name": "os",
+            "properties": {
+                "size": "4G",
+                "mode": "AHCI",
+                "source": {
+                    "url": "http://polandball.ixsystems.com/vm-templates/centos-7-1511/os.img.gz",
+                    "sha256": "8a4c5ce67c5185af2d89241510792ae08daeaa0fc29a04c962db187929baec34"
+                }
+            }
+        }
+    ],
+    "type": "VM"
+}
