@@ -1,0 +1,38 @@
+{
+    "template": {
+        "name": "opensuse-42.1",
+        "author": "Wojciech Kloska <shangteus@ixsystems.com>",
+        "description": "openSUSE 42.1 VM image",
+        "created_at": {"$date": "2016-05-25T23:59:44"},
+        "updated_at": {"$date": "2016-05-25T23:59:44"},
+        "files": true
+    },
+    "config": {
+        "ncpus": 1,
+        "bootloader": "GRUB",
+        "memsize": 1024,
+        "boot_directory": "grub"
+    },
+    "devices" : [
+        {
+            "type": "NIC",
+            "name": "nic",
+            "properties" : {
+                "type": "NAT"
+            }
+        },
+        {
+            "type": "DISK",
+            "name": "os",
+            "properties": {
+                "size": "4G",
+                "mode": "AHCI",
+                "source": {
+                    "url": "http://polandball.ixsystems.com/vm-templates/opensuse-42.1/os.img.gz",
+                    "sha256": "af563859cf70f096793aaedf5baaa006143b8dca99a6fc4e11d65d634717da84"
+                }
+            }
+        }
+    ],
+    "type": "VM"
+}
