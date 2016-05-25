@@ -4,7 +4,7 @@
         "author": "Jordan Hubbard <jkh@ixsystems.com>",
         "description": "FreeBSD 10.3 image with root on ZFS",
         "created_at": {"$date": "2016-05-24T09:44:48"},
-        "updated_at": {"$date": "2016-05-24T09:44:48"}
+        "updated_at": {"$date": "2016-05-24T017:57:40"}
     },
     "config" : {
         "ncpus": 1,
