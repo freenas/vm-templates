@@ -1,0 +1,38 @@
+{
+    "template": {
+        "name": "ubuntu-server-16.04-vnc",
+        "author": "Wojciech Kloska <shangteus@ixsystems.com>",
+        "description": "Ubuntu Server 16.04 with VNC session started automatically",
+        "created_at": {"$date": "2016-05-26T14:02:22"},
+        "updated_at": {"$date": "2016-05-26T14:02:22"}
+    },
+    "config": {
+        "ncpus": 2,
+        "bootloader": "GRUB",
+        "memsize": 4096,
+        "boot_device": "os",
+        "boot_partition": "msdos1"
+    },
+    "devices": [
+        {
+            "type": "DISK",
+            "name": "os",
+            "properties": {
+                "size": "16G",
+                "mode": "AHCI",
+                "source": {
+                    "url": "http://download.freenas.org/vm-templates/ubuntu-server-16.04-vnc/os.img.gz",
+                    "sha256": "c064f12df89cdff5f242a8ac87fabb58378b1fdd828870a923a7e468b20672f7"
+                }
+            }
+        },
+        {
+            "type": "NIC",
+            "name": "nic",
+            "properties" : {
+                "type": "NAT"
+            }
+        }
+    ],
+    "type": "VM"
+}
