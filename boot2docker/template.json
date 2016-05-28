@@ -4,18 +4,20 @@
         "author": "Jakub Klama <jakub@ixsystems.com>",
         "description": "boot2docker Docker host for FreeNAS",
         "created_at": {"$date": "2016-02-10T22:45:38"},
-        "updated_at": {"$date": "2016-05-28T08:21:30"},
+        "updated_at": {"$date": "2016-05-28T12:46:44"},
         "files": true,
         "fetch": [
             {
-                "url": "http://download.freenas.org/vm-templates/boot2docker/vmlinuz64",
-                "sha256": "39a4b805758c5963b041b91d6470e2a16aa39b1f5304a4705b8645bf175b3802",
-                "dest": "grub/vmlinuz64"
+                "name": "vmlinuz64",
+                "url": "http://download.freenas.org/vm-templates/boot2docker/vmlinuz64.gz",
+                "sha256": "d1ac88a39660c37d934dc6526f03706e6299c567bbe512e5be5664f7bec37568",
+                "dest": "grub"
             },
             {
-                "url": "http://download.freenas.org/vm-templates/boot2docker/initrd",
-                "sha256": "fc87ccec21cfa3c5394aeed9094da83598864a2acf3e6ffe7de81a6ba60a560f",
-                "dest": "grub/initrd"
+                "name": "initrd",
+                "url": "http://download.freenas.org/vm-templates/boot2docker/initrd.gz",
+                "sha256": "277d626ad12c395912debda66575657ef8f288c2720d78d9c258bd4542a18d62",
+                "dest": "grub"
             }
         ]
     },
