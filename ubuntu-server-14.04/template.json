@@ -4,7 +4,14 @@
         "author": "Jakub Klama <jakub@ixsystems.com>",
         "description": "Ubuntu Server 14.04",
         "created_at": {"$date": "2015-12-25T02:38:27"},
-        "updated_at": {"$date": "2016-05-22T19:03:00"}
+        "updated_at": {"$date": "2016-05-29T00:30:40"},
+        "fetch": [
+            {
+                "name": "os",
+                "url": "http://download.freenas.org/vm-templates/ubuntu-server-14.04/os.img.gz",
+                "sha256": "3af86be2c7d7714e5917cf3610e6760d2c199e42ab0200d0b294e3a145e0fa78"
+            }
+        ]
     },
     "config": {
         "ncpus": 1,
@@ -20,10 +27,7 @@
             "properties": {
                 "size": "4G",
                 "mode": "AHCI",
-                "source": {
-                    "url": "http://download.freenas.org/vm-templates/ubuntu-server-14.04/os.img.gz",
-                    "sha256": "3af86be2c7d7714e5917cf3610e6760d2c199e42ab0200d0b294e3a145e0fa78"
-                }
+                "source": "os"
             }
         },
         {

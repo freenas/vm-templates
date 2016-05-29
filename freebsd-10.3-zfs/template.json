@@ -4,7 +4,14 @@
         "author": "Jordan Hubbard <jkh@ixsystems.com>",
         "description": "FreeBSD 10.3 image with root on ZFS",
         "created_at": {"$date": "2016-05-24T09:44:48"},
-        "updated_at": {"$date": "2016-05-25T01:01:15"}
+        "updated_at": {"$date": "2016-05-29T00:30:40"},
+        "fetch": [
+            {
+                "name": "os",
+                "url": "http://download.freenas.org/vm-templates/freebsd-10.3-zfs/os.img.gz",
+                "sha256": "5df82b4ceec8439129be4be0cd156a16ce845a1ba193abdd729a26c7aa74d79c"
+            }
+        ]
     },
     "config" : {
         "ncpus": 1,
@@ -19,10 +26,7 @@
             "properties": {
                 "size": "16G",
                 "mode": "AHCI",
-                "source": {
-                    "url": "http://download.freenas.org/vm-templates/freebsd-10.3-zfs/os.img.gz",
-                    "sha256": "5df82b4ceec8439129be4be0cd156a16ce845a1ba193abdd729a26c7aa74d79c"
-                }
+                "source": "os"
             }
         },
         {

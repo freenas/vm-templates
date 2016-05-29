@@ -4,7 +4,14 @@
         "author": "Jakub Klama <jakub@ixsystems.com>",
         "description": "Ubuntu Cloud Edition 14.04",
         "created_at": {"$date": "2016-02-03T16:12:49"},
-        "updated_at": {"$date": "2016-05-22T19:03:00"}
+        "updated_at": {"$date": "2016-05-29T00:30:40"},
+        "fetch": [
+            {
+                "name": "os",
+                "url": "http://download.freenas.org/vm-templates/ubuntu-cloud-14.04/os.img.gz",
+                "sha256": "7aedc5c506bea0e2badab1f14e00c500f2f3430534eccf02e7aa57298ca33cf0"
+            }
+        ]
     },
     "config": {
         "ncpus": 1,
@@ -20,10 +27,7 @@
             "properties": {
                 "size": "4G",
                 "mode": "AHCI",
-                "source": {
-                    "url": "http://download.freenas.org/vm-templates/ubuntu-cloud-14.04/os.img.gz",
-                    "sha256": "7aedc5c506bea0e2badab1f14e00c500f2f3430534eccf02e7aa57298ca33cf0"
-                }
+                "source": "os"
             }
         },
         {

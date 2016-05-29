@@ -4,8 +4,15 @@
         "author": "Wojciech Kloska <shangteus@ixsystems.com>",
         "description": "openSUSE 42.1 VM image",
         "created_at": {"$date": "2016-05-25T23:59:44"},
-        "updated_at": {"$date": "2016-05-27T12:35:52"},
-        "files": true
+        "updated_at": {"$date": "2016-05-29T00:30:40"},
+        "files": true,
+        "fetch": [
+            {
+                "name": "os",
+                "url": "http://download.freenas.org/vm-templates/opensuse-42.1/os.img.gz",
+                "sha256": "af563859cf70f096793aaedf5baaa006143b8dca99a6fc4e11d65d634717da84"
+            }
+        ]
     },
     "config": {
         "ncpus": 1,
@@ -27,10 +34,7 @@
             "properties": {
                 "size": "4G",
                 "mode": "AHCI",
-                "source": {
-                    "url": "http://download.freenas.org/vm-templates/opensuse-42.1/os.img.gz",
-                    "sha256": "af563859cf70f096793aaedf5baaa006143b8dca99a6fc4e11d65d634717da84"
-                }
+                "source": "os"
             }
         }
     ],

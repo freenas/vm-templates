@@ -4,8 +4,15 @@
         "author": "Wojciech Kloska <shangteus@ixsystems.com>",
         "description": "Centos 7 image",
         "created_at": {"$date": "2016-05-25T19:20:00"},
-        "updated_at": {"$date": "2016-05-27T12:35:52"},
-        "files": true
+        "updated_at": {"$date": "2016-05-29T00:30:40"},
+        "files": true,
+        "fetch": [
+            {
+                "name": "os",
+                "url": "http://download.freenas.org/vm-templates/centos-7-1511/os.img.gz",
+                "sha256": "8a4c5ce67c5185af2d89241510792ae08daeaa0fc29a04c962db187929baec34"
+            }
+        ]
     },
     "config": {
         "ncpus": 1,
@@ -27,10 +34,7 @@
             "properties": {
                 "size": "8G",
                 "mode": "AHCI",
-                "source": {
-                    "url": "http://download.freenas.org/vm-templates/centos-7-1511/os.img.gz",
-                    "sha256": "8a4c5ce67c5185af2d89241510792ae08daeaa0fc29a04c962db187929baec34"
-                }
+                "source": "os"
             }
         }
     ],

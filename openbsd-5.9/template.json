@@ -4,8 +4,15 @@
         "author": "Wojciech Kloska <shangteus@ixsystems.com>",
         "description": "OpenBSD 5.9 image",
         "created_at": {"$date": "2016-05-25T19:30:11"},
-        "updated_at": {"$date": "2016-05-27T12:35:52"},
-        "files": true
+        "updated_at": {"$date": "2016-05-29T00:30:40"},
+        "files": true,
+        "fetch": [
+            {
+                "name": "os",
+                "url": "http://download.freenas.org/vm-templates/openbsd-5.9/os.img.gz",
+                "sha256": "57291075580c11d4cdf7615f0b9f3dff36967dac713638988eb00ea602565eef"
+            }
+        ]
     },
     "config": {
         "ncpus": 1,
@@ -27,10 +34,7 @@
             "properties": {
                 "size": "4G",
                 "mode": "AHCI",
-                "source": {
-                    "url": "http://download.freenas.org/vm-templates/openbsd-5.9/os.img.gz",
-                    "sha256": "57291075580c11d4cdf7615f0b9f3dff36967dac713638988eb00ea602565eef"
-                }
+                "source": "os"
             }
         }
     ],

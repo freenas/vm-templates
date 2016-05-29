@@ -4,7 +4,14 @@
         "author": "Jordan Hubbard <jkh@ixsystems.com>",
         "description": "FreeBSD 11-20160518-r300097 image with root on ZFS",
         "created_at": {"$date": "2016-04-22T09:15:12"},
-        "updated_at": {"$date": "2016-05-22T19:03:00"}
+        "updated_at": {"$date": "2016-05-29T00:30:40"},
+        "fetch": [
+            {
+                "name": "os",
+                "url": "http://download.freenas.org/vm-templates/freebsd-11-zfs/os.img.gz",
+                "sha256": "8c6e9b0a2e60f61a4aabbd4a81156f3c0022d5d63a836798efae1c7894bab435"
+            }
+        ]
     },
     "config" : {
         "ncpus": 1,
@@ -19,10 +26,7 @@
             "properties": {
                 "size": "16G",
                 "mode": "VIRTIO",
-                "source": {
-                    "url": "http://download.freenas.org/vm-templates/freebsd-11-zfs/os.img.gz",
-                    "sha256": "8c6e9b0a2e60f61a4aabbd4a81156f3c0022d5d63a836798efae1c7894bab435"
-                }
+                "source": "os"
             }
         },
         {
