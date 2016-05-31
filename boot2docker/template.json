@@ -4,7 +4,7 @@
         "author": "Jakub Klama <jakub@ixsystems.com>",
         "description": "boot2docker Docker host for FreeNAS",
         "created_at": {"$date": "2016-02-10T22:45:38"},
-        "updated_at": {"$date": "2016-05-28T12:46:44"},
+        "updated_at": {"$date": "2016-06-01T22:55:34"},
         "files": true,
         "fetch": [
             {
@@ -16,7 +16,7 @@
             {
                 "name": "initrd",
                 "url": "http://download.freenas.org/vm-templates/boot2docker/initrd.gz",
-                "sha256": "277d626ad12c395912debda66575657ef8f288c2720d78d9c258bd4542a18d62",
+                "sha256": "d249dd1d9a9b3b1c91123422f6cca7fba4d915795c0e60885911206af426a2ab",
                 "dest": "grub"
             }
         ]
