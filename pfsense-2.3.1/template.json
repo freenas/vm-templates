@@ -1,0 +1,41 @@
+{
+    "template": {
+        "name": "pfsense-2.3.1",
+        "author": "Wojciech Kloska <shangteus@ixsystems.com>",
+        "description": "Pfsense 2.3.1 image",
+        "created_at": {"$date": "2015-06-02T20:11:52"},
+        "updated_at": {"$date": "2016-06-02T20:11:52"},
+        "fetch": [
+            {
+                "name": "os",
+                "url": "http://download.freenas.org/vm-templates/pfsense-2.3.1/os.img.gz",
+                "sha256": "3df71775707f251dbcd01c709147ffae4e1f48ccb13b50bde40d0411c299f0db"
+            }
+        ]
+    },
+    "config" : {
+        "ncpus": 1,
+        "bootloader": "BHYVELOAD",
+        "memsize": 1024,
+        "boot_device": "os"
+    },
+    "devices" : [
+        {
+            "type": "DISK",
+            "name": "os",
+            "properties": {
+                "size": "8G",
+                "mode": "AHCI",
+                "source": "os"
+            }
+        },
+        {
+            "type": "NIC",
+            "name": "nic",
+            "properties" : {
+                "type": "NAT"
+            }
+        }
+    ],
+    "type": "VM"
+}
