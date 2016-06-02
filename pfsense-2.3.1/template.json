@@ -4,12 +4,12 @@
         "author": "Wojciech Kloska <shangteus@ixsystems.com>",
         "description": "Pfsense 2.3.1 image",
         "created_at": {"$date": "2015-06-02T20:11:52"},
-        "updated_at": {"$date": "2016-06-02T20:11:52"},
+        "updated_at": {"$date": "2016-06-02T23:16:44"},
         "fetch": [
             {
                 "name": "os",
                 "url": "http://download.freenas.org/vm-templates/pfsense-2.3.1/os.img.gz",
-                "sha256": "3df71775707f251dbcd01c709147ffae4e1f48ccb13b50bde40d0411c299f0db"
+                "sha256": "85ebd9c86ac8950e3d3a44347a66c50590501593bb18f57cc7b674b86af432a1"
             }
         ]
     },
@@ -24,7 +24,7 @@
             "type": "DISK",
             "name": "os",
             "properties": {
-                "size": "8G",
+                "size": "1G",
                 "mode": "AHCI",
                 "source": "os"
             }

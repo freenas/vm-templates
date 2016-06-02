@@ -1,7 +1,7 @@
 ## Login instructions:
 
 ```
-Username: root
+Username: admin
 Password: pfsense
 ```
 
