@@ -7,4 +7,4 @@ Password: centos
 
 ## Notes:
 
-This VM contains the basic Centos 7 1511 image.
+This VM template installs a very basic Centos 7 1511 image.
