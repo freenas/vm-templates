@@ -7,4 +7,4 @@ Password: <none>
 
 ## Notes:
 
-This very minimal VM template is a Docker host used in FreeNAS as a containers provider.
+This very minimal VM is a Docker host used in FreeNAS as a containers provider.
