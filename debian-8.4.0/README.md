@@ -7,4 +7,4 @@ Password: debian
 
 ## Notes:
 
-This VM contains minimal Debian 8.4.0 distribution image.
+This VM template installs a minimal Debian 8.4.0 distribution image.
