@@ -7,4 +7,4 @@ Password: fedora
 
 ## Notes:
 
-This VM contains the minimal Fedora 23 server distribution image.
+This VM template installs the minimal Fedora 23 server distribution image.
