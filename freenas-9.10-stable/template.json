@@ -1,0 +1,41 @@
+{
+    "template": {
+        "name": "freenas-9.10-stable",
+        "author": "Wojciech Kloska <shangteus@ixsystems.com>",
+        "description": "FreeNAS 9.10 STABLE 201606072003",
+        "created_at": {"$date": "2016-06-18T01:26:21"},
+        "updated_at": {"$date": "2016-06-18T01:26:21"},
+        "fetch": [
+            {
+                "name": "os",
+                "url": "http://download.freenas.org/vm-templates/freenas-9.10-stable/os.img.gz",
+                "sha256": "f3f8906ca743729c7a444b4de526ea2492ce429d4ef88de86a115b2ea3fb7eb7"
+            }
+        ]
+    },
+    "config" : {
+        "ncpus": 2,
+        "bootloader": "BHYVELOAD",
+        "memsize": 4096,
+        "boot_device": "os"
+    },
+    "devices" : [
+        {
+            "type": "DISK",
+            "name": "os",
+            "properties": {
+                "size": "8G",
+                "mode": "AHCI",
+                "source": "os"
+            }
+        },
+        {
+            "type": "NIC",
+            "name": "nic",
+            "properties" : {
+                "type": "NAT"
+            }
+        }
+    ],
+    "type": "VM"
+}
