@@ -1,0 +1,41 @@
+{
+    "template": {
+        "name": "solaris-11.3",
+        "author": "Wojciech Kloska <shangteus@ixsystems.com>",
+        "description": "Solaris 11.3",
+        "created_at": {"$date": "2016-06-24T12:26:21"},
+        "updated_at": {"$date": "2016-06-24T12:26:21"},
+        "fetch": [
+            {
+                "name": "os",
+                "url": "http://download.freenas.org/vm-templates/solaris-11.3/os.img.gz",
+                "sha256": "c05edf309c351807ba3e8d219943b70eeb0d5e4259f4a9a1715e01247e74ddfa"
+            }
+        ]
+    },
+    "config" : {
+        "ncpus": 2,
+        "bootloader": "UEFI_CSM",
+        "memsize": 4096,
+        "boot_device": "os"
+    },
+    "devices" : [
+        {
+            "type": "DISK",
+            "name": "os",
+            "properties": {
+                "size": "8G",
+                "mode": "AHCI",
+                "source": "os"
+            }
+        },
+        {
+            "type": "NIC",
+            "name": "nic",
+            "properties" : {
+                "type": "NAT"
+            }
+        }
+    ],
+    "type": "VM"
+}
