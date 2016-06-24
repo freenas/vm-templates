@@ -4,18 +4,18 @@
         "author": "Wojciech Kloska <shangteus@ixsystems.com>",
         "description": "FreeNAS 9.10 STABLE 201606072003",
         "created_at": {"$date": "2016-06-18T01:26:21"},
-        "updated_at": {"$date": "2016-06-18T01:26:21"},
+        "updated_at": {"$date": "2016-06-24T17:29:50"},
         "fetch": [
             {
                 "name": "os",
                 "url": "http://download.freenas.org/vm-templates/freenas-9.10-stable/os.img.gz",
-                "sha256": "f3f8906ca743729c7a444b4de526ea2492ce429d4ef88de86a115b2ea3fb7eb7"
+                "sha256": "82b256192c6c3fcc16b34b4b5bccc87f7fbbf546fc60411403a0cda8829ba4e7"
             }
         ]
     },
     "config" : {
         "ncpus": 2,
-        "bootloader": "BHYVELOAD",
+        "bootloader": "UEFI",
         "memsize": 4096,
         "boot_device": "os"
     },
@@ -33,7 +33,15 @@
             "type": "NIC",
             "name": "nic",
             "properties" : {
-                "type": "NAT"
+                "type": "BRIDGE",
+                "bridge": "default"
+            }
+        },
+        {
+            "type": "GRAPHICS",
+            "name": "framebuffer",
+            "properties": {
+                "resolution": "1024x768"
             }
         }
     ],
