@@ -1,0 +1,48 @@
+{
+    "template": {
+        "name": "ubuntu-16.04-uefi",
+        "author": "Wojciech Kloska <shangteus@ixsystems.com>",
+        "description": "Ubuntu 16.04 on UEFI with VNC",
+        "created_at": {"$date": "2016-06-24T23:26:21"},
+        "updated_at": {"$date": "2016-06-24T23:26:21"},
+        "fetch": [
+            {
+                "name": "os",
+                "url": "http://download.freenas.org/vm-templates/ubuntu-16.04-uefi/os.img.gz",
+                "sha256": "84af225a7e9e3239785aaa8b61a7153c9069cd1e6a194d81a10b89d2556fdeb9"
+            }
+        ]
+    },
+    "config" : {
+        "ncpus": 4,
+        "bootloader": "UEFI",
+        "memsize": 8192,
+        "boot_device": "os"
+    },
+    "devices" : [
+        {
+            "type": "DISK",
+            "name": "os",
+            "properties": {
+                "size": "16G",
+                "mode": "AHCI",
+                "source": "os"
+            }
+        },
+        {
+            "type": "NIC",
+            "name": "nic",
+            "properties" : {
+                "type": "NAT"
+            }
+        },
+        {
+            "type": "GRAPHICS",
+            "name": "framebuffer",
+            "properties": {
+                "resolution": "1024x768"
+            }
+        }
+    ],
+    "type": "VM"
+}
