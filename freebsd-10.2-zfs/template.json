@@ -4,7 +4,7 @@
         "author": "Jakub Klama <jakub@ixsystems.com>",
         "description": "FreeBSD 10.2 image with root on ZFS",
         "created_at": {"$date": "2015-12-24T15:53:48"},
-        "updated_at": {"$date": "2016-06-29T19:e40:40"},
+        "updated_at": {"$date": "2016-06-29T19:40:40"},
         "fetch": [
             {
                 "name": "os",
