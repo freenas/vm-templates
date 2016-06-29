@@ -4,7 +4,7 @@
         "author": "Jordan Hubbard <jkh@ixsystems.com>",
         "description": "FreeBSD 11-20160518-r300097 image with root on ZFS",
         "created_at": {"$date": "2016-04-22T09:15:12"},
-        "updated_at": {"$date": "2016-05-29T00:30:40"},
+        "updated_at": {"$date": "2016-06-29T19:40:40"},
         "fetch": [
             {
                 "name": "os",
@@ -24,7 +24,7 @@
             "type": "DISK",
             "name": "os",
             "properties": {
-                "size": "16G",
+                "size": 17179869184,
                 "mode": "VIRTIO",
                 "source": "os"
             }

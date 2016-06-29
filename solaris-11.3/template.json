@@ -4,7 +4,7 @@
         "author": "Wojciech Kloska <shangteus@ixsystems.com>",
         "description": "Solaris 11.3",
         "created_at": {"$date": "2016-06-24T12:26:21"},
-        "updated_at": {"$date": "2016-06-24T12:26:21"},
+        "updated_at": {"$date": "2016-06-29T19:40:40"},
         "fetch": [
             {
                 "name": "os",
@@ -24,7 +24,7 @@
             "type": "DISK",
             "name": "os",
             "properties": {
-                "size": "8G",
+                "size": 8589934592,
                 "mode": "AHCI",
                 "source": "os"
             }

@@ -4,7 +4,7 @@
         "author": "Wojciech Kloska <shangteus@ixsystems.com>",
         "description": "NetBSD 7.0.1 image",
         "created_at": {"$date": "2016-06-23T18:02:00"},
-        "updated_at": {"$date": "2016-06-23T19:58:00"},
+        "updated_at": {"$date": "2016-06-29T19:40:40"},
         "files": true,
         "fetch": [
             {
@@ -32,7 +32,7 @@
             "type": "DISK",
             "name": "os",
             "properties": {
-                "size": "8G",
+                "size": 8589934592,
                 "mode": "VIRTIO",
                 "source": "os"
             }

@@ -4,7 +4,7 @@
         "author": "Wojciech Kloska <shangteus@ixsystems.com>",
         "description": "Ubuntu Server 16.04 with VNC session started automatically",
         "created_at": {"$date": "2016-05-26T14:02:22"},
-        "updated_at": {"$date": "2016-05-29T00:30:40"},
+        "updated_at": {"$date": "2016-06-29T19:40:40"},
         "fetch": [
             {
                 "name": "os",
@@ -25,7 +25,7 @@
             "type": "DISK",
             "name": "os",
             "properties": {
-                "size": "16G",
+                "size": 17179869184,
                 "mode": "AHCI",
                 "source": "os"
             }

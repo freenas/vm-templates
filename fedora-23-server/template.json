@@ -4,7 +4,7 @@
         "author": "Wojciech Kloska <shangteus@ixsystems.com>",
         "description": "Fedora Release 23 - Server version",
         "created_at": {"$date": "2016-05-25T22:02:32"},
-        "updated_at": {"$date": "2016-05-29T00:30:40"},
+        "updated_at": {"$date": "2016-06-29T19:40:40"},
         "files": true,
         "fetch": [
             {
@@ -32,7 +32,7 @@
             "type": "DISK",
             "name": "os",
             "properties": {
-                "size": "16G",
+                "size": 17179869184,
                 "mode": "AHCI",
                 "source": "os"
             }

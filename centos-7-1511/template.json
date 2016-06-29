@@ -4,7 +4,7 @@
         "author": "Wojciech Kloska <shangteus@ixsystems.com>",
         "description": "Centos 7 image",
         "created_at": {"$date": "2016-05-25T19:20:00"},
-        "updated_at": {"$date": "2016-05-29T00:30:40"},
+        "updated_at": {"$date": "2016-06-29T19:40:40"},
         "files": true,
         "fetch": [
             {
@@ -32,7 +32,7 @@
             "type": "DISK",
             "name": "os",
             "properties": {
-                "size": "8G",
+                "size": 8589934592,
                 "mode": "AHCI",
                 "source": "os"
             }

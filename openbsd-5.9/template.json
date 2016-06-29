@@ -4,7 +4,7 @@
         "author": "Wojciech Kloska <shangteus@ixsystems.com>",
         "description": "OpenBSD 5.9 image",
         "created_at": {"$date": "2016-05-25T19:30:11"},
-        "updated_at": {"$date": "2016-05-29T00:30:40"},
+        "updated_at": {"$date": "2016-06-29T19:40:40"},
         "files": true,
         "fetch": [
             {
@@ -32,7 +32,7 @@
             "type": "DISK",
             "name": "os",
             "properties": {
-                "size": "4G",
+                "size": 4294967296,
                 "mode": "AHCI",
                 "source": "os"
             }
