@@ -38,6 +38,5 @@
             }
         }
     ],
-    "type": "VM",
     "guest_type": "fedora"
 }

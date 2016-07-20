@@ -55,6 +55,5 @@
             }
         }
     ],
-    "type": "VM",
     "guest_type": "boot2docker"
 }

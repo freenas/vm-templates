@@ -39,6 +39,5 @@
             }
         }
     ],
-    "type": "VM",
     "guest_type": "ubuntu"
 }
