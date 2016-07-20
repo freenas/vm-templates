@@ -4,7 +4,7 @@
         "author": "Wojciech Kloska <shangteus@ixsystems.com>",
         "description": "Debian 8.4.0 linux VM image",
         "created_at": {"$date": "2016-05-25T22:33:32"},
-        "updated_at": {"$date": "2016-06-29T19:40:40"},
+        "updated_at": {"$date": "2016-07-20T15:40:40"},
         "fetch": [
             {
                 "name": "os",
@@ -38,5 +38,6 @@
             }
         }
     ],
-    "type": "VM"
+    "type": "VM",
+    "guest_type": "debian"
 }

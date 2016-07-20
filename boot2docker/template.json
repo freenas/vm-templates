@@ -4,7 +4,7 @@
         "author": "Jakub Klama <jakub@ixsystems.com>",
         "description": "boot2docker Docker host for FreeNAS",
         "created_at": {"$date": "2016-02-10T22:45:38"},
-        "updated_at": {"$date": "2016-07-07T18:45:25"},
+        "updated_at": {"$date": "2016-07-20T15:45:25"},
         "files": true,
         "fetch": [
             {
@@ -55,5 +55,6 @@
             }
         }
     ],
-    "type": "VM"
+    "type": "VM",
+    "guest_type": "boot2docker"
 }
