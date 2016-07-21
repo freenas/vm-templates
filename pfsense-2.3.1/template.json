@@ -4,7 +4,7 @@
         "author": "Wojciech Kloska <shangteus@ixsystems.com>",
         "description": "Pfsense 2.3.1 image",
         "created_at": {"$date": "2015-06-02T20:11:52"},
-        "updated_at": {"$date": "2016-07-20T15:40:40"},
+        "updated_at": {"$date": "2016-07-20T22:24:40"},
         "fetch": [
             {
                 "name": "os",
@@ -33,7 +33,7 @@
             "type": "NIC",
             "name": "nic",
             "properties" : {
-                "type": "NAT"
+                "mode": "NAT"
             }
         }
     ],

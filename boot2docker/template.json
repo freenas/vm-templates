@@ -4,7 +4,7 @@
         "author": "Jakub Klama <jakub@ixsystems.com>",
         "description": "boot2docker Docker host for FreeNAS",
         "created_at": {"$date": "2016-02-10T22:45:38"},
-        "updated_at": {"$date": "2016-07-20T15:45:25"},
+        "updated_at": {"$date": "2016-07-20T22:24:25"},
         "files": true,
         "fetch": [
             {
@@ -34,7 +34,7 @@
             "type": "NIC",
             "name": "mgmt",
             "properties" : {
-                "type": "MANAGEMENT"
+                "mode": "MANAGEMENT"
             }
         },
         {

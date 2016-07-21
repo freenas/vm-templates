@@ -4,7 +4,7 @@
         "author": "Jakub Klama <jakub@ixsystems.com>",
         "description": "Ubuntu Cloud Edition 14.04",
         "created_at": {"$date": "2016-02-03T16:12:49"},
-        "updated_at": {"$date": "2016-07-20T15:40:40"},
+        "updated_at": {"$date": "2016-07-20T22:25:40"},
         "fetch": [
             {
                 "name": "os",
@@ -34,14 +34,14 @@
             "type": "NIC",
             "name": "mgmt",
             "properties" : {
-                "type": "MANAGEMENT"
+                "mode": "MANAGEMENT"
             }
         },
         {
             "type": "NIC",
             "name": "nat",
             "properties" : {
-                "type": "NAT"
+                "mode": "NAT"
             }
         }
     ],

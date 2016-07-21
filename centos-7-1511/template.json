@@ -4,7 +4,7 @@
         "author": "Wojciech Kloska <shangteus@ixsystems.com>",
         "description": "Centos 7 image",
         "created_at": {"$date": "2016-05-25T19:20:00"},
-        "updated_at": {"$date": "2016-07-20T15:40:40"},
+        "updated_at": {"$date": "2016-07-20T22:24:40"},
         "files": true,
         "fetch": [
             {
@@ -25,7 +25,7 @@
             "type": "NIC",
             "name": "nic",
             "properties" : {
-                "type": "NAT"
+                "mode": "NAT"
             }
         },
         {

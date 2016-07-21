@@ -4,7 +4,7 @@
         "author": "Wojciech Kloska <shangteus@ixsystems.com>",
         "description": "NetBSD 7.0.1 image",
         "created_at": {"$date": "2016-06-23T18:02:00"},
-        "updated_at": {"$date": "2016-07-20T15:40:40"},
+        "updated_at": {"$date": "2016-07-20T22:24:40"},
         "files": true,
         "fetch": [
             {
@@ -25,7 +25,7 @@
             "type": "NIC",
             "name": "nic",
             "properties" : {
-                "type": "NAT"
+                "mode": "NAT"
             }
         },
         {
