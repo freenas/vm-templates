@@ -4,7 +4,7 @@
         "author": "Wojciech Kloska <shangteus@ixsystems.com>",
         "description": "FreeNAS 9.10 STABLE 201606072003",
         "created_at": {"$date": "2016-06-18T01:26:21"},
-        "updated_at": {"$date": "2016-07-20T15:40:40"},
+        "updated_at": {"$date": "2016-07-20T22:24:40"},
         "fetch": [
             {
                 "name": "os",
@@ -33,7 +33,7 @@
             "type": "NIC",
             "name": "nic",
             "properties" : {
-                "type": "BRIDGE",
+                "mode": "BRIDGED",
                 "bridge": "default"
             }
         },
