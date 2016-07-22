@@ -4,13 +4,14 @@
         "author": "Wojciech Kloska <shangteus@ixsystems.com>",
         "description": "Diskless Ubuntu 14.04 with rootfs on 9p share",
         "created_at": {"$date": "2016-05-29T01:10:27"},
-        "updated_at": {"$date": "2016-07-22T18:41:41"},
+        "updated_at": {"$date": "2016-07-22T21:26:36"},
         "files": true,
         "fetch": [
             {
                 "name": "rootfs",
                 "url": "http://download.freenas.org/vm-templates/ubuntu-14.04-9p/rootfs.tar.gz",
-                "sha256": "7ede6ed4ebc7b9687c52fba3d574e694142914c7a7cbc30f7a30b14b9d22b39c"
+                "sha256": "7ede6ed4ebc7b9687c52fba3d574e694142914c7a7cbc30f7a30b14b9d22b39c",
+                "size": 95849105
             }
         ]
     },

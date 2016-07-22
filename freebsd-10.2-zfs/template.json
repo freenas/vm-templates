@@ -4,12 +4,13 @@
         "author": "Jakub Klama <jakub@ixsystems.com>",
         "description": "FreeBSD 10.2 image with root on ZFS",
         "created_at": {"$date": "2015-12-24T15:53:48"},
-        "updated_at": {"$date": "2016-07-22T18:41:41"},
+        "updated_at": {"$date": "2016-07-22T21:26:36"},
         "fetch": [
             {
                 "name": "os",
                 "url": "http://download.freenas.org/vm-templates/freebsd-10.2-zfs/os.img.gz",
-                "sha256": "03eb1f907e6f631c4a021f6a01a89fbaedc4cb50ad890dbdad9ab243861dd0b5"
+                "sha256": "03eb1f907e6f631c4a021f6a01a89fbaedc4cb50ad890dbdad9ab243861dd0b5",
+                "size": 432303719
             }
         ]
     },

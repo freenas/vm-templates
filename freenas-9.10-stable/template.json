@@ -4,12 +4,13 @@
         "author": "Wojciech Kloska <shangteus@ixsystems.com>",
         "description": "FreeNAS 9.10 STABLE 201606072003",
         "created_at": {"$date": "2016-06-18T01:26:21"},
-        "updated_at": {"$date": "2016-07-22T18:41:41"},
+        "updated_at": {"$date": "2016-07-22T21:26:36"},
         "fetch": [
             {
                 "name": "os",
                 "url": "http://download.freenas.org/vm-templates/freenas-9.10-stable/os.img.gz",
-                "sha256": "82b256192c6c3fcc16b34b4b5bccc87f7fbbf546fc60411403a0cda8829ba4e7"
+                "sha256": "82b256192c6c3fcc16b34b4b5bccc87f7fbbf546fc60411403a0cda8829ba4e7",
+                "size": 566093536
             }
         ]
     },

@@ -4,12 +4,13 @@
         "author": "Wojciech Kloska <shangteus@ixsystems.com>",
         "description": "Ubuntu 16.04 on UEFI with VNC",
         "created_at": {"$date": "2016-06-24T23:26:21"},
-        "updated_at": {"$date": "2016-07-22T18:41:41"},
+        "updated_at": {"$date": "2016-07-22T21:26:36"},
         "fetch": [
             {
                 "name": "os",
                 "url": "http://download.freenas.org/vm-templates/ubuntu-16.04-uefi/os.img.gz",
-                "sha256": "84af225a7e9e3239785aaa8b61a7153c9069cd1e6a194d81a10b89d2556fdeb9"
+                "sha256": "84af225a7e9e3239785aaa8b61a7153c9069cd1e6a194d81a10b89d2556fdeb9",
+                "size": 2422691141
             }
         ]
     },

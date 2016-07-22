@@ -4,12 +4,13 @@
         "author": "Jakub Klama <jakub@ixsystems.com>",
         "description": "Ubuntu Cloud Edition 14.04",
         "created_at": {"$date": "2016-02-03T16:12:49"},
-        "updated_at": {"$date": "2016-07-22T18:41:41"},
+        "updated_at": {"$date": "2016-07-22T21:26:36"},
         "fetch": [
             {
                 "name": "os",
                 "url": "http://download.freenas.org/vm-templates/ubuntu-cloud-14.04/os.img.gz",
-                "sha256": "7aedc5c506bea0e2badab1f14e00c500f2f3430534eccf02e7aa57298ca33cf0"
+                "sha256": "7aedc5c506bea0e2badab1f14e00c500f2f3430534eccf02e7aa57298ca33cf0",
+                "size": 240203258
             }
         ]
     },

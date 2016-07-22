@@ -4,12 +4,13 @@
         "author": "Wojciech Kloska <shangteus@ixsystems.com>",
         "description": "Debian 8.4.0 linux VM image",
         "created_at": {"$date": "2016-05-25T22:33:32"},
-        "updated_at": {"$date": "2016-07-22T18:41:41"},
+        "updated_at": {"$date": "2016-07-22T21:26:36"},
         "fetch": [
             {
                 "name": "os",
                 "url": "http://download.freenas.org/vm-templates/debian-8.4.0/os.img.gz",
-                "sha256": "eb0be7bce98b80428616970db6b0ef2a7f9ec6997f3808e14a09ee6b0b76fbf2"
+                "sha256": "eb0be7bce98b80428616970db6b0ef2a7f9ec6997f3808e14a09ee6b0b76fbf2",
+                "size": 619648141
             }
         ]
     },
