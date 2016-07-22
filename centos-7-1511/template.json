@@ -4,7 +4,7 @@
         "author": "Wojciech Kloska <shangteus@ixsystems.com>",
         "description": "Centos 7 image",
         "created_at": {"$date": "2016-05-25T19:20:00"},
-        "updated_at": {"$date": "2016-07-20T22:24:40"},
+        "updated_at": {"$date": "2016-07-22T18:41:41"},
         "files": true,
         "fetch": [
             {
@@ -38,5 +38,5 @@
             }
         }
     ],
-    "guest_type": "centos"
+    "guest_type": "linux64"
 }

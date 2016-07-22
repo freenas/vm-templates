@@ -4,7 +4,7 @@
         "author": "Wojciech Kloska <shangteus@ixsystems.com>",
         "description": "Solaris 11.3",
         "created_at": {"$date": "2016-06-24T12:26:21"},
-        "updated_at": {"$date": "2016-07-20T22:24:40"},
+        "updated_at": {"$date": "2016-07-22T18:41:41"},
         "fetch": [
             {
                 "name": "os",
@@ -37,5 +37,5 @@
             }
         }
     ],
-    "guest_type": "solaris"
+    "guest_type": "solaris64"
 }

@@ -4,7 +4,7 @@
         "author": "Wojciech Kloska <shangteus@ixsystems.com>",
         "description": "Ubuntu Server 16.04 with VNC session started automatically",
         "created_at": {"$date": "2016-05-26T14:02:22"},
-        "updated_at": {"$date": "2016-07-20T22:25:40"},
+        "updated_at": {"$date": "2016-07-22T18:41:41"},
         "fetch": [
             {
                 "name": "os",
@@ -39,5 +39,5 @@
             }
         }
     ],
-    "guest_type": "ubuntu"
+    "guest_type": "linux64"
 }

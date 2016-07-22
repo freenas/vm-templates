@@ -4,7 +4,7 @@
         "author": "Wojciech Kloska <shangteus@ixsystems.com>",
         "description": "Diskless Ubuntu 14.04 with rootfs on 9p share",
         "created_at": {"$date": "2016-05-29T01:10:27"},
-        "updated_at": {"$date": "2016-07-20T22:25:18"},
+        "updated_at": {"$date": "2016-07-22T18:41:41"},
         "files": true,
         "fetch": [
             {
@@ -38,5 +38,5 @@
             }
         }
     ],
-    "guest_type": "ubuntu"
+    "guest_type": "linux64"
 }
