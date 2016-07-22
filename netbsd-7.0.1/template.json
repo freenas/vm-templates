@@ -1,43 +1,47 @@
 {
     "template": {
-        "name": "netbsd-7.0.1",
-        "author": "Wojciech Kloska <shangteus@ixsystems.com>",
-        "description": "NetBSD 7.0.1 image",
-        "created_at": {"$date": "2016-06-23T18:02:00"},
-        "updated_at": {"$date": "2016-07-22T21:26:36"},
-        "files": true,
+        "name": "netbsd-7.0.1", 
+        "author": "Wojciech Kloska <shangteus@ixsystems.com>", 
+        "description": "NetBSD 7.0.1 image", 
+        "created_at": {
+            "$date": "2016-06-23T18:02:00"
+        }, 
+        "updated_at": {
+            "$date": "2016-07-22T22:12:32"
+        }, 
+        "files": true, 
         "fetch": [
             {
-                "name": "os",
-                "url": "http://download.freenas.org/vm-templates/netbsd-7.0.1/os.img.gz",
-                "sha256": "8e5b9955f57231950cb9a25486cda29c3d2b62d5b7d89d4b87d84783794714dc",
+                "name": "os", 
+                "url": "http://download.freenas.org/vm-templates/netbsd-7.0.1/os.img.gz", 
+                "sha256": "8e5b9955f57231950cb9a25486cda29c3d2b62d5b7d89d4b87d84783794714dc", 
                 "size": 229230323
             }
         ]
-    },
+    }, 
     "config": {
-        "ncpus": 2,
-        "bootloader": "GRUB",
-        "memsize": 2048,
+        "ncpus": 2, 
+        "bootloader": "GRUB", 
+        "memsize": 2048, 
         "boot_directory": "grub"
-    },
-    "devices" : [
+    }, 
+    "devices": [
         {
-            "type": "NIC",
-            "name": "nic",
-            "properties" : {
+            "type": "NIC", 
+            "name": "nic", 
+            "properties": {
                 "mode": "NAT"
             }
-        },
+        }, 
         {
-            "type": "DISK",
-            "name": "os",
+            "type": "DISK", 
+            "name": "os", 
             "properties": {
-                "size": 8589934592,
-                "mode": "VIRTIO",
+                "size": 8589934592, 
+                "mode": "VIRTIO", 
                 "source": "os"
             }
         }
-    ],
+    ], 
     "guest_type": "netbsd64"
 }

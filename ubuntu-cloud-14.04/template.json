@@ -1,50 +1,54 @@
 {
     "template": {
-        "name": "ubuntu-cloud-14.04",
-        "author": "Jakub Klama <jakub@ixsystems.com>",
-        "description": "Ubuntu Cloud Edition 14.04",
-        "created_at": {"$date": "2016-02-03T16:12:49"},
-        "updated_at": {"$date": "2016-07-22T21:26:36"},
+        "name": "ubuntu-cloud-14.04", 
+        "author": "Jakub Klama <jakub@ixsystems.com>", 
+        "description": "Ubuntu Cloud Edition 14.04", 
+        "created_at": {
+            "$date": "2016-02-03T16:12:49"
+        }, 
+        "updated_at": {
+            "$date": "2016-07-22T22:12:32"
+        }, 
         "fetch": [
             {
-                "name": "os",
-                "url": "http://download.freenas.org/vm-templates/ubuntu-cloud-14.04/os.img.gz",
-                "sha256": "7aedc5c506bea0e2badab1f14e00c500f2f3430534eccf02e7aa57298ca33cf0",
+                "name": "os", 
+                "url": "http://download.freenas.org/vm-templates/ubuntu-cloud-14.04/os.img.gz", 
+                "sha256": "7aedc5c506bea0e2badab1f14e00c500f2f3430534eccf02e7aa57298ca33cf0", 
                 "size": 240203258
             }
         ]
-    },
+    }, 
     "config": {
-        "ncpus": 1,
-        "bootloader": "GRUB",
-        "memsize": 1024,
-        "boot_device": "os",
+        "ncpus": 1, 
+        "bootloader": "GRUB", 
+        "memsize": 1024, 
+        "boot_device": "os", 
         "boot_partition": "msdos1"
-    },
+    }, 
     "devices": [
         {
-            "type": "DISK",
-            "name": "os",
+            "type": "DISK", 
+            "name": "os", 
             "properties": {
-                "size": 4294967296,
-                "mode": "AHCI",
+                "size": 4294967296, 
+                "mode": "AHCI", 
                 "source": "os"
             }
-        },
+        }, 
         {
-            "type": "NIC",
-            "name": "mgmt",
-            "properties" : {
+            "type": "NIC", 
+            "name": "mgmt", 
+            "properties": {
                 "mode": "MANAGEMENT"
             }
-        },
+        }, 
         {
-            "type": "NIC",
-            "name": "nat",
-            "properties" : {
+            "type": "NIC", 
+            "name": "nat", 
+            "properties": {
                 "mode": "NAT"
             }
         }
-    ],
+    ], 
     "guest_type": "linux64"
 }

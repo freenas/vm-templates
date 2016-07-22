@@ -1,42 +1,46 @@
 {
     "template": {
-        "name": "solaris-11.3",
-        "author": "Wojciech Kloska <shangteus@ixsystems.com>",
-        "description": "Solaris 11.3",
-        "created_at": {"$date": "2016-06-24T12:26:21"},
-        "updated_at": {"$date": "2016-07-22T21:26:36"},
+        "name": "solaris-11.3", 
+        "author": "Wojciech Kloska <shangteus@ixsystems.com>", 
+        "description": "Solaris 11.3", 
+        "created_at": {
+            "$date": "2016-06-24T12:26:21"
+        }, 
+        "updated_at": {
+            "$date": "2016-07-22T22:12:32"
+        }, 
         "fetch": [
             {
-                "name": "os",
-                "url": "http://download.freenas.org/vm-templates/solaris-11.3/os.img.gz",
-                "sha256": "c05edf309c351807ba3e8d219943b70eeb0d5e4259f4a9a1715e01247e74ddfa",
+                "name": "os", 
+                "url": "http://download.freenas.org/vm-templates/solaris-11.3/os.img.gz", 
+                "sha256": "c05edf309c351807ba3e8d219943b70eeb0d5e4259f4a9a1715e01247e74ddfa", 
                 "size": 1187265147
             }
         ]
-    },
-    "config" : {
-        "ncpus": 2,
-        "bootloader": "UEFI_CSM",
-        "memsize": 4096,
+    }, 
+    "config": {
+        "ncpus": 2, 
+        "bootloader": "UEFI_CSM", 
+        "memsize": 4096, 
         "boot_device": "os"
-    },
-    "devices" : [
+    }, 
+    "devices": [
         {
-            "type": "DISK",
-            "name": "os",
+            "type": "DISK", 
+            "name": "os", 
             "properties": {
-                "size": 8589934592,
-                "mode": "AHCI",
+                "size": 8589934592, 
+                "mode": "AHCI", 
                 "source": "os"
             }
-        },
+        }, 
         {
-            "type": "NIC",
-            "name": "nic",
-            "properties" : {
+            "type": "NIC", 
+            "name": "nic", 
+            "properties": {
                 "mode": "NAT"
             }
         }
-    ],
+    ], 
     "guest_type": "solaris64"
 }

@@ -1,43 +1,47 @@
 {
     "template": {
-        "name": "fedora-23-server",
-        "author": "Wojciech Kloska <shangteus@ixsystems.com>",
-        "description": "Fedora Release 23 - Server version",
-        "created_at": {"$date": "2016-05-25T22:02:32"},
-        "updated_at": {"$date": "2016-07-22T21:26:36"},
-        "files": true,
+        "name": "fedora-23-server", 
+        "author": "Wojciech Kloska <shangteus@ixsystems.com>", 
+        "description": "Fedora Release 23 - Server version", 
+        "created_at": {
+            "$date": "2016-05-25T22:02:32"
+        }, 
+        "updated_at": {
+            "$date": "2016-07-22T22:12:32"
+        }, 
+        "files": true, 
         "fetch": [
             {
-                "name": "os",
-                "url": "http://download.freenas.org/vm-templates/fedora-23-server/os.img.gz",
-                "sha256": "fed7971d05b805b13580beafd323c53d8748aa26cdd336b0d85a3751052b6f73",
+                "name": "os", 
+                "url": "http://download.freenas.org/vm-templates/fedora-23-server/os.img.gz", 
+                "sha256": "fed7971d05b805b13580beafd323c53d8748aa26cdd336b0d85a3751052b6f73", 
                 "size": 571166696
             }
         ]
-    },
+    }, 
     "config": {
-        "ncpus": 1,
-        "bootloader": "GRUB",
-        "memsize": 1024,
+        "ncpus": 1, 
+        "bootloader": "GRUB", 
+        "memsize": 1024, 
         "boot_directory": "grub"
-    },
-    "devices" : [
+    }, 
+    "devices": [
         {
-            "type": "NIC",
-            "name": "nic",
-            "properties" : {
+            "type": "NIC", 
+            "name": "nic", 
+            "properties": {
                 "mode": "NAT"
             }
-        },
+        }, 
         {
-            "type": "DISK",
-            "name": "os",
+            "type": "DISK", 
+            "name": "os", 
             "properties": {
-                "size": 17179869184,
-                "mode": "AHCI",
+                "size": 17179869184, 
+                "mode": "AHCI", 
                 "source": "os"
             }
         }
-    ],
+    ], 
     "guest_type": "linux64"
 }

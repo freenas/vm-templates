@@ -1,43 +1,47 @@
 {
     "template": {
-        "name": "centos-7-1511",
-        "author": "Wojciech Kloska <shangteus@ixsystems.com>",
-        "description": "Centos 7 image",
-        "created_at": {"$date": "2016-05-25T19:20:00"},
-        "updated_at": {"$date": "2016-07-22T21:26:36"},
-        "files": true,
+        "name": "centos-7-1511", 
+        "author": "Wojciech Kloska <shangteus@ixsystems.com>", 
+        "description": "Centos 7 image", 
+        "created_at": {
+            "$date": "2016-05-25T19:20:00"
+        }, 
+        "updated_at": {
+            "$date": "2016-07-22T22:12:32"
+        }, 
+        "files": true, 
         "fetch": [
             {
-                "name": "os",
-                "url": "http://download.freenas.org/vm-templates/centos-7-1511/os.img.gz",
-                "sha256": "8a4c5ce67c5185af2d89241510792ae08daeaa0fc29a04c962db187929baec34",
+                "name": "os", 
+                "url": "http://download.freenas.org/vm-templates/centos-7-1511/os.img.gz", 
+                "sha256": "8a4c5ce67c5185af2d89241510792ae08daeaa0fc29a04c962db187929baec34", 
                 "size": 426981794
             }
         ]
-    },
+    }, 
     "config": {
-        "ncpus": 1,
-        "bootloader": "GRUB",
-        "memsize": 1024,
+        "ncpus": 1, 
+        "bootloader": "GRUB", 
+        "memsize": 1024, 
         "boot_directory": "grub"
-    },
-    "devices" : [
+    }, 
+    "devices": [
         {
-            "type": "NIC",
-            "name": "nic",
-            "properties" : {
+            "type": "NIC", 
+            "name": "nic", 
+            "properties": {
                 "mode": "NAT"
             }
-        },
+        }, 
         {
-            "type": "DISK",
-            "name": "os",
+            "type": "DISK", 
+            "name": "os", 
             "properties": {
-                "size": 8589934592,
-                "mode": "AHCI",
+                "size": 8589934592, 
+                "mode": "AHCI", 
                 "source": "os"
             }
         }
-    ],
+    ], 
     "guest_type": "linux64"
 }

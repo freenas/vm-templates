@@ -1,42 +1,46 @@
 {
     "template": {
-        "name": "freebsd-10.3-zfs",
-        "author": "Jordan Hubbard <jkh@ixsystems.com>",
-        "description": "FreeBSD 10.3 image with root on ZFS",
-        "created_at": {"$date": "2016-05-24T09:44:48"},
-        "updated_at": {"$date": "2016-07-22T21:26:36"},
+        "name": "freebsd-10.3-zfs", 
+        "author": "Jordan Hubbard <jkh@ixsystems.com>", 
+        "description": "FreeBSD 10.3 image with root on ZFS", 
+        "created_at": {
+            "$date": "2016-05-24T09:44:48"
+        }, 
+        "updated_at": {
+            "$date": "2016-07-22T22:12:32"
+        }, 
         "fetch": [
             {
-                "name": "os",
-                "url": "http://download.freenas.org/vm-templates/freebsd-10.3-zfs/os.img.gz",
-                "sha256": "5df82b4ceec8439129be4be0cd156a16ce845a1ba193abdd729a26c7aa74d79c",
+                "name": "os", 
+                "url": "http://download.freenas.org/vm-templates/freebsd-10.3-zfs/os.img.gz", 
+                "sha256": "5df82b4ceec8439129be4be0cd156a16ce845a1ba193abdd729a26c7aa74d79c", 
                 "size": 434838312
             }
         ]
-    },
-    "config" : {
-        "ncpus": 1,
-        "bootloader": "BHYVELOAD",
-        "memsize": 1024,
+    }, 
+    "config": {
+        "ncpus": 1, 
+        "bootloader": "BHYVELOAD", 
+        "memsize": 1024, 
         "boot_device": "os"
-    },
-    "devices" : [
+    }, 
+    "devices": [
         {
-            "type": "DISK",
-            "name": "os",
+            "type": "DISK", 
+            "name": "os", 
             "properties": {
-                "size": 17179869184,
-                "mode": "AHCI",
+                "size": 17179869184, 
+                "mode": "AHCI", 
                 "source": "os"
             }
-        },
+        }, 
         {
-            "type": "NIC",
-            "name": "nic",
-            "properties" : {
+            "type": "NIC", 
+            "name": "nic", 
+            "properties": {
                 "mode": "NAT"
             }
         }
-    ],
+    ], 
     "guest_type": "freebsd64"
 }

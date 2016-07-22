@@ -1,43 +1,47 @@
 {
     "template": {
-        "name": "debian-8.4.0",
-        "author": "Wojciech Kloska <shangteus@ixsystems.com>",
-        "description": "Debian 8.4.0 linux VM image",
-        "created_at": {"$date": "2016-05-25T22:33:32"},
-        "updated_at": {"$date": "2016-07-22T21:26:36"},
+        "name": "debian-8.4.0", 
+        "author": "Wojciech Kloska <shangteus@ixsystems.com>", 
+        "description": "Debian 8.4.0 linux VM image", 
+        "created_at": {
+            "$date": "2016-05-25T22:33:32"
+        }, 
+        "updated_at": {
+            "$date": "2016-07-22T22:12:32"
+        }, 
         "fetch": [
             {
-                "name": "os",
-                "url": "http://download.freenas.org/vm-templates/debian-8.4.0/os.img.gz",
-                "sha256": "eb0be7bce98b80428616970db6b0ef2a7f9ec6997f3808e14a09ee6b0b76fbf2",
+                "name": "os", 
+                "url": "http://download.freenas.org/vm-templates/debian-8.4.0/os.img.gz", 
+                "sha256": "eb0be7bce98b80428616970db6b0ef2a7f9ec6997f3808e14a09ee6b0b76fbf2", 
                 "size": 619648141
             }
         ]
-    },
+    }, 
     "config": {
-        "ncpus": 1,
-        "bootloader": "GRUB",
-        "memsize": 1024,
-        "boot_device": "os",
+        "ncpus": 1, 
+        "bootloader": "GRUB", 
+        "memsize": 1024, 
+        "boot_device": "os", 
         "boot_partition": "msdos1"
-    },
-    "devices" : [
+    }, 
+    "devices": [
         {
-            "type": "NIC",
-            "name": "nic",
-            "properties" : {
+            "type": "NIC", 
+            "name": "nic", 
+            "properties": {
                 "mode": "NAT"
             }
-        },
+        }, 
         {
-            "type": "DISK",
-            "name": "os",
+            "type": "DISK", 
+            "name": "os", 
             "properties": {
-                "size": 4294967296,
-                "mode": "AHCI",
+                "size": 4294967296, 
+                "mode": "AHCI", 
                 "source": "os"
             }
         }
-    ],
+    ], 
     "guest_type": "linux64"
 }
