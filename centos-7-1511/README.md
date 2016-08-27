@@ -1,7 +1,7 @@
 ## Login instructions:
 
 ```
-Username: centos
+Username: root
 Password: centos
 ```
 
