@@ -38,7 +38,8 @@
             "type": "NIC", 
             "name": "nic", 
             "properties": {
-                "mode": "NAT"
+                "mode": "NAT",
+                "device": "E1000"
             }
         }
     ], 
