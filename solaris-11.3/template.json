@@ -7,14 +7,14 @@
             "$date": "2016-06-24T12:26:21"
         }, 
         "updated_at": {
-            "$date": "2016-07-22T22:12:32"
+            "$date": "2016-08-29T17:34:00"
         }, 
         "fetch": [
             {
                 "name": "os", 
                 "url": "http://download.freenas.org/vm-templates/solaris-11.3/os.img.gz", 
-                "sha256": "c05edf309c351807ba3e8d219943b70eeb0d5e4259f4a9a1715e01247e74ddfa", 
-                "size": 1187265147
+                "sha256": "eb3b4b6e5cc01cec5082adefcd66ee6a4fdbe8eea5836398abb52f48bb98376d", 
+                "size": 1245019866
             }
         ]
     }, 
