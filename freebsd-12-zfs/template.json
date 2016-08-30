@@ -1,25 +1,25 @@
 {
     "template": {
-        "name": "freebsd-11-zfs", 
+        "name": "freebsd-12-zfs", 
         "author": "Jordan Hubbard <jkh@ixsystems.com>", 
-        "description": "FreeBSD 11-20160518-r300097 image with root on ZFS", 
+        "description": "FreeBSD 12.0-20160809-r303880 image with root on ZFS", 
         "created_at": {
-            "$date": "2016-04-22T09:15:12"
+            "$date": "2016-08-29T20:11:00"
         }, 
         "updated_at": {
-            "$date": "2016-07-22T22:12:32"
+            "$date": "2016-08-29T20:11:00"
         }, 
         "fetch": [
             {
                 "name": "os", 
-                "url": "http://download.freenas.org/vm-templates/freebsd-11-zfs/os.img.gz", 
-                "sha256": "8c6e9b0a2e60f61a4aabbd4a81156f3c0022d5d63a836798efae1c7894bab435", 
-                "size": 426871675
+                "url": "http://download.freenas.org/vm-templates/freebsd-12-zfs/os.img.gz", 
+                "sha256": "638db5dd247718b2d72bd870bbb4724c6e85537d097f36ff6a2c142c3c6b57cf", 
+                "size": 594155844
             }
         ]
     }, 
     "config": {
-        "ncpus": 1, 
+        "ncpus": 4, 
         "bootloader": "BHYVELOAD", 
         "memsize": 1024, 
         "boot_device": "os"
@@ -29,7 +29,7 @@
             "type": "DISK", 
             "name": "os", 
             "properties": {
-                "size": 17179869184, 
+                "size": 8589934592, 
                 "mode": "VIRTIO", 
                 "source": "os"
             }
