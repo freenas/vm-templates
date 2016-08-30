@@ -7,7 +7,7 @@
             "$date": "2016-02-10T22:45:38"
         }, 
         "updated_at": {
-            "$date": "2016-07-22T22:12:32"
+            "$date": "2016-08-30T18:14:28"
         }, 
         "files": true, 
         "fetch": [
@@ -21,8 +21,8 @@
             {
                 "name": "initrd", 
                 "url": "http://download.freenas.org/vm-templates/boot2docker/initrd.img.gz", 
-                "sha256": "53f05266ea9c58b434bba5d1f31a8c1a95470188ddeaee4786cc0c1d8068f453", 
-                "size": 28781670, 
+                "sha256": "e5e7842c240397f774f8c4578272aa84615cc2bc47522e97dff6397e16726e21", 
+                "size": 28805951, 
                 "dest": "grub"
             }
         ]
