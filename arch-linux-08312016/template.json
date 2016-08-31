@@ -12,7 +12,7 @@
         "fetch": [
             {
                 "name": "os", 
-                "url": "http://download.freenas.org/vm-templates/arch/os.img.gz", 
+                "url": "http://download.freenas.org/vm-templates/arch-linux-08312016/os.img.gz", 
                 "sha256": "b69829e35b2f80bfb860c5a7200d627cc2d09eb55349dd78c8eef69bd4971537", 
                 "size": 578127917
             }
