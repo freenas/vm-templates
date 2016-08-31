@@ -1,0 +1,47 @@
+{
+    "template": {
+        "name": "arch", 
+        "author": "Erin Clark <erin@ixsystems.com>", 
+        "description": "Arch Linux VM image", 
+        "created_at": {
+            "$date": "2016-08-31 02:39:54.323000"
+        }, 
+        "updated_at": {
+            "$date": "2016-08-31 18:04:11.304000"
+        }, 
+        "fetch": [
+            {
+                "name": "os", 
+                "url": "http://download.freenas.org/vm-templates/arch/os.img.gz", 
+                "sha256": "b69829e35b2f80bfb860c5a7200d627cc2d09eb55349dd78c8eef69bd4971537", 
+                "size": 578127917
+            }
+        ]
+    }, 
+    "config": {
+        "ncpus": 1, 
+        "bootloader": "GRUB", 
+        "memsize": 1024, 
+        "boot_device": "os", 
+        "boot_partition": "msdos1"
+    }, 
+    "devices": [
+        {
+            "type": "NIC", 
+            "name": "nic", 
+            "properties": {
+                "mode": "NAT"
+            }
+        }, 
+        {
+            "type": "DISK", 
+            "name": "os", 
+            "properties": {
+                "size": 8589934592, 
+                "mode": "AHCI", 
+                "source": "os"
+            }
+        }
+    ], 
+    "guest_type": "linux64"
+}
