@@ -1,13 +1,13 @@
 {
     "template": {
-        "name": "arch", 
+        "name": "arch-linux-08312016", 
         "author": "Erin Clark <erin@ixsystems.com>", 
         "description": "Arch Linux VM image", 
         "created_at": {
-            "$date": "2016-08-31 02:39:54.323000"
+            "$date": "2016-08-31T02:39:54"
         }, 
         "updated_at": {
-            "$date": "2016-08-31 18:04:11.304000"
+            "$date": "2016-08-31T18:04:11"
         }, 
         "fetch": [
             {
