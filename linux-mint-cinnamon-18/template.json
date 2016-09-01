@@ -1,0 +1,63 @@
+
+   "template": {
+        "name": "linux-mint-cinnamon-18", 
+        "author": "Suraj Ravichandran <suraj@ixsystems.com>", 
+        "description": "Linux Mint 18 (Codename: Sarah) Cinnamon Flavor (long term support release, until 2021)", 
+        "created_at": {
+            "$date": "2016-09-01T01:44:00"
+        }, 
+        "updated_at": {
+            "$date": "2016-09-01T01:44:00"
+        }, 
+        "fetch": [
+            {
+                "name": "os", 
+                "url": "http://download.freenas.org/vm-templates/linux-mint-cinnamon-18/os.img.gz", 
+                "sha256": "ea5408923130e63db3326dabf1c1595c3b2b8dec6ba6837ec07731f101409721", 
+                "size": 2291250771
+            }
+        ]
+    },
+    "config": {
+        "ncpus": 2, 
+        "bootloader": "UEFI", 
+        "memsize": 1024
+    }, 
+    "devices": [
+        {
+            "type": "DISK", 
+            "name": "os", 
+            "properties": {
+                "size": 21474836480, 
+                "mode": "AHCI", 
+                "source": "os"
+            }
+        }, 
+        {
+            "type": "NIC", 
+            "name": "nic", 
+            "properties": {
+                "mode": "BRIDGED",
+                "device": "VIRTIO",
+                "bridge": "default"
+            }
+        },
+        {
+            "type": "GRAPHICS", 
+            "name": "framebuffer", 
+            "properties": {
+                "resolution": "1024x768",
+                "vnc_enabled": true,
+                "vnc_port": 7777
+            }
+        },
+        {   
+            "tyep": "USB",
+            "name": "tablet",
+            "properties": {
+                "device": "tablet"
+            }
+        }
+    ], 
+    "guest_type": "linux64"
+}
