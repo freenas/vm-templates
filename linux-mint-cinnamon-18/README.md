@@ -8,8 +8,10 @@ Root Password: root
 ```
 
 ## VNC INFO
-IP: Freenas 10 Machine's ip
+```
+IP: Freenas 10 Machine's IP
 PORT: 7777
+```
 
 ## Notes:
 
