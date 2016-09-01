@@ -7,6 +7,10 @@ Password: mint
 Root Password: root
 ```
 
+## VNC INFO
+IP: Freenas 10 Machine's ip
+PORT: 7777
+
 ## Notes:
 
 This VM contains the cinnamon desktop flavor of the mint linux distro version 18.

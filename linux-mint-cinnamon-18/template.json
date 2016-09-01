@@ -2,7 +2,7 @@
    "template": {
         "name": "linux-mint-cinnamon-18", 
         "author": "Suraj Ravichandran <suraj@ixsystems.com>", 
-        "description": "Linux Mint 18 (Codename: Sarah) Cinnamon Flavor (long term support release, until 2021)", 
+        "description": "Linux Mint 18 (Codename: Sarah) Cinnamon Flavor (long term support release, until 2021) with preconfigured VNC",
         "created_at": {
             "$date": "2016-09-01T01:44:00"
         }, 
@@ -52,7 +52,7 @@
             }
         },
         {   
-            "tyep": "USB",
+            "type": "USB",
             "name": "tablet",
             "properties": {
                 "device": "tablet"
