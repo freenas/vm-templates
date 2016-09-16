@@ -4,10 +4,10 @@
         "author": "Suraj Ravichandran <suraj@ixsystems.com>",
         "description": "TrueOS 12 (formerly PC-BSD) Desktop Version with VNC session started automatically",
         "created_at": {
-            "$date": "2016-09-12T108:15:00"
+            "$date": "2016-09-12T08:15:00"
         },
         "updated_at": {
-            "$date": "2016-09-12T108:15:00"
+            "$date": "2016-09-12T08:15:00"
         },
         "fetch": [
             {
