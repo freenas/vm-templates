@@ -7,7 +7,7 @@
             "$date": "2016-09-18T19:55:37"
         }, 
         "updated_at": {
-            "$date": "2016-09-19T07:53:20"
+            "$date": "2016-09-19T07:55:43"
         }, 
         "files": true,
         "fetch": [
@@ -18,7 +18,7 @@
                 "size": 6688326
             },
             {
-                "name": "system", 
+                "name": "system.iso", 
                 "url": "http://download.freenas.org/vm-templates/smartos-20160915/system.iso.gz", 
                 "sha256": "4f31769c5cc16635d5f87096312148273ce0f9c70c24c2f7b93f135ee12b0f61", 
                 "size": 162031629,
@@ -53,7 +53,7 @@
             "type": "CDROM", 
             "name": "system", 
             "properties": {
-                "path": "system.iso"
+                "path": "files/system.iso"
             }
         }
     ], 
