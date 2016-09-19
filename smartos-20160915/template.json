@@ -33,6 +33,13 @@
     }, 
     "devices": [
         {
+            "type": "CDROM", 
+            "name": "system", 
+            "properties": {
+                "path": "files/system.iso"
+            }
+        },
+        {
             "type": "DISK", 
             "name": "data", 
             "properties": {
@@ -47,13 +54,6 @@
             "properties": {
                 "mode": "NAT",
                 "device": "VIRTIO"
-            }
-        },
-        {
-            "type": "CDROM", 
-            "name": "system", 
-            "properties": {
-                "path": "files/system.iso"
             }
         }
     ], 
