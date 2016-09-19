@@ -1,0 +1,60 @@
+{
+    "template": {
+        "name": "smartos-20160915", 
+        "author": "Wojciech Kloska <shangteus@ixsystems.com>", 
+        "description": "SmartOS build:20160915T211220Z", 
+        "created_at": {
+            "$date": "2016-09-18T19:55:37"
+        }, 
+        "updated_at": {
+            "$date": "2016-09-18T19:55:37"
+        }, 
+        "fetch": [
+            {
+                "name": "data", 
+                "url": "http://download.freenas.org/vm-templates/smartos-20160915/data.img.gz", 
+                "sha256": "e7c4054fe53385876dbdb1571dc3e030ddc80e8dcd00c6bcef4c4c3620431b8c", 
+                "size": 6688326
+            },
+            {
+                "name": "system", 
+                "url": "http://download.freenas.org/vm-templates/smartos-20160915/system.iso.gz", 
+                "sha256": "4f31769c5cc16635d5f87096312148273ce0f9c70c24c2f7b93f135ee12b0f61", 
+                "size": 162031629,
+                "dest": "."
+            }
+        ]
+    }, 
+    "config": {
+        "ncpus": 2, 
+        "bootloader": "UEFI_CSM", 
+        "memsize": 4096
+    }, 
+    "devices": [
+        {
+            "type": "DISK", 
+            "name": "data", 
+            "properties": {
+                "size": 4294967296, 
+                "mode": "AHCI", 
+                "source": "data"
+            }
+        }, 
+        {
+            "type": "NIC", 
+            "name": "nic", 
+            "properties": {
+                "mode": "NAT",
+                "device": "VIRTIO"
+            }
+        },
+        {
+            "type": "CDROM", 
+            "name": "system", 
+            "properties": {
+                "path": "system.iso"
+            }
+        }
+    ], 
+    "guest_type": "freebsd64"
+}
