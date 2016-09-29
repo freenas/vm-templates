@@ -7,7 +7,7 @@
             "$date": "2016-02-10T22:45:38"
         }, 
         "updated_at": {
-            "$date": "2016-08-30T18:14:28"
+            "$date": "2016-09-30T22:18:43"
         }, 
         "files": true, 
         "fetch": [
@@ -41,6 +41,14 @@
             "name": "mgmt", 
             "properties": {
                 "mode": "MANAGEMENT"
+            }
+        }, 
+        {
+            "type": "NIC", 
+            "name": "bridge", 
+            "properties": {
+                "mode": "BRIDGED",
+                "bridge": "default"
             }
         }, 
         {
