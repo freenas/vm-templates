@@ -1,0 +1,49 @@
+{
+    "template": {
+        "name": "zentyal-4.2", 
+        "author": "Bartosz Prokop <bartosz@ixsystems.com>", 
+        "description": "Zentyal 4.2 appliance", 
+        "created_at": {
+            "$date": "2016-09-29T16:22:54"
+        }, 
+        "updated_at": {
+            "$date": "2016-09-29T16:22:54"
+        }, 
+        "fetch": [
+            {
+                "name": "os", 
+                "url": "http://download.freenas.org/vm-templates/zentyal-4.2/os.img.gz", 
+                "sha256": "a7904a3daa45c20578f48e806bcef6194db8ca1a83095d22779905b66a57f5eb", 
+                "size": 1823141567
+            }
+        ]
+    }, 
+    "config": {
+        "ncpus": 1, 
+        "bootloader": "GRUB", 
+        "memsize": 1024, 
+        "boot_device": "os", 
+        "boot_partition": "msdos1"
+    }, 
+    "devices": [
+        {
+            "type": "DISK", 
+            "name": "os", 
+            "properties": {
+                "size": 17179869184, 
+                "mode": "AHCI", 
+                "source": "os"
+            }
+        }, 
+        { 
+            "type": "NIC",
+            "name": "nic",
+            "properties": {
+                "mode": "BRIDGED",
+                "bridge": "default",
+                "device": "VIRTIO"
+            }
+        }
+    ], 
+    "guest_type": "linux64"
+}
