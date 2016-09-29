@@ -7,14 +7,14 @@
             "$date": "2016-09-12T08:15:00"
         },
         "updated_at": {
-            "$date": "2016-09-12T08:15:00"
+            "$date": "2016-09-29T00:10:00"
         },
         "fetch": [
             {
                 "name": "os",
                 "url": "http://download.freenas.org/vm-templates/trueos-desktop-12/os.img.gz",
-                "sha256": "0281fcb63eda600ad302688e76815780f477e2a88c91b6746d616fda48116962",
-                "size": 1972790272
+                "sha256": "06bed8b7f572e310faeeb5d478547d5e08cdeb51e7bd4ed18b2ba0ac06789719",
+                "size": 2054240256
             }
         ]
     },
