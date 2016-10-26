@@ -13,8 +13,8 @@
             {
                 "name": "os", 
                 "url": "http://download.freenas.org/vm-templates/freebsd-12-zfs/os.img.gz", 
-                "sha256": "9580807037e6f2506328a1080a08e54fca14acf62a40204ad27401b4aabfc02c", 
-                "size": 7253703811
+                "sha256": "15c5328635fae814eb2e15f0bf8673875c7cc02d22f5327527675a95c8d32e59", 
+                "size": 9564475899
             }
         ]
     }, 
