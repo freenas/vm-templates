@@ -13,8 +13,8 @@
             {
                 "name": "os", 
                 "url": "http://download.freenas.org/vm-templates/zentyal-4.2/os.img.gz", 
-                "sha256": "061d2477986f2009a3e02c79f359cce538ac071003a4d0a80cd0f09007f10533", 
-                "size": 1799964693
+                "sha256": "5995728a13bf25c60174264db8e87bc51a758e5789ed3897882ba736308ec683",
+                "size": 1635895590
             }
         ]
     }, 
