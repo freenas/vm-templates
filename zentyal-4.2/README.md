@@ -3,6 +3,7 @@
 ```
 Username: zentyal
 Password: zentyal
+Domain administrator password: zentyal
 ```
 ## Notes:
 
