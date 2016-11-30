@@ -7,4 +7,4 @@ Password: freenas
 
 ## Notes:
 
-This VM contains a FreeNAS-9.10-STABLE-201606072003 distribution.
+This VM contains a FreeNAS 10 BETA2 distribution.
