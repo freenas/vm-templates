@@ -13,8 +13,8 @@
             {
                 "name": "os", 
                 "url": "http://download.freenas.org/vm-templates/ubuntu-server-16.04-vnc/os.img.gz", 
-                "sha256": "c064f12df89cdff5f242a8ac87fabb58378b1fdd828870a923a7e468b20672f7", 
-                "size": 817311957
+                "sha256": "d73224e26e28f711fc3ecbddae2cfff194be9dd1974e3a644b30e56fb6422788",
+                "size": 1321161313
             }
         ]
     }, 
