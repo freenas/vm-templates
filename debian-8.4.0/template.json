@@ -13,8 +13,8 @@
             {
                 "name": "os", 
                 "url": "http://download.freenas.org/vm-templates/debian-8.4.0/os.img.gz", 
-                "sha256": "6ce6136f6e284665b0856e3b4ad760b98610a48c682c082a7e7a75804314f0f2", 
-                "size": 623486843
+                "sha256": "7ba40506e478c62dfb5e690ced6637fa8d524627cf7273473fc98aae859f317f",
+                "size": 623470415
             }
         ]
     }, 
