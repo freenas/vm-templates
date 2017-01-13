@@ -1,6 +1,6 @@
 {
     "template": {
-        "name": "arch-linux-08312016", 
+        "name": "arch-linux-20170113", 
         "author": "Erin Clark <erin@ixsystems.com>", 
         "description": "Arch Linux VM image", 
         "created_at": {
@@ -12,9 +12,9 @@
         "fetch": [
             {
                 "name": "os", 
-                "url": "http://download.freenas.org/vm-templates/arch-linux-08312016/os.img.gz", 
-                "sha256": "b69829e35b2f80bfb860c5a7200d627cc2d09eb55349dd78c8eef69bd4971537", 
-                "size": 578127917
+                "url": "http://download.freenas.org/vm-templates/arch-linux-20170113/os.img.gz", 
+                "sha256": "071c3c576303587a98847430fc94b2964d1e084411e557a430b335aeff8de463", 
+                "size": 906066958
             }
         ]
     }, 
