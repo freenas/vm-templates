@@ -19,9 +19,9 @@
         ]
     }, 
     "config": {
-        "ncpus": 4, 
+        "ncpus": 1,
         "bootloader": "BHYVELOAD", 
-        "memsize": 2048, 
+        "memsize": 1024,
         "boot_device": "os"
     }, 
     "devices": [
