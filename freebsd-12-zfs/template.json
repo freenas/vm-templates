@@ -13,8 +13,8 @@
             {
                 "name": "os", 
                 "url": "http://download.freenas.org/vm-templates/freebsd-12-zfs/os.img.gz", 
-                "sha256": "15c5328635fae814eb2e15f0bf8673875c7cc02d22f5327527675a95c8d32e59", 
-                "size": 9564475899
+                "sha256": "f8771e78c8350fd119f8c3f9d40f139229edd629334f12217d31858566b67407",
+                "size": 745139955
             }
         ]
     }, 
@@ -29,7 +29,7 @@
             "type": "DISK", 
             "name": "os", 
             "properties": {
-                "size": 21474836480, 
+                "size": 10737418240,
                 "mode": "VIRTIO", 
                 "source": "os"
             }
