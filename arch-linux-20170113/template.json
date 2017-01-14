@@ -7,14 +7,14 @@
             "$date": "2016-08-31T02:39:54"
         }, 
         "updated_at": {
-            "$date": "2016-08-31T18:04:11"
+            "$date": "2017-01-13T16:20:00"
         }, 
         "fetch": [
             {
                 "name": "os", 
                 "url": "http://download.freenas.org/vm-templates/arch-linux-20170113/os.img.gz", 
-                "sha256": "071c3c576303587a98847430fc94b2964d1e084411e557a430b335aeff8de463", 
-                "size": 906066958
+                "sha256": "3d099c50d3270f388d36fbf2bcf4440126adfb767087c3853f47449520d70b8e", 
+                "size": 906154051
             }
         ]
     }, 
