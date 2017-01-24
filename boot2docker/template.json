@@ -7,22 +7,22 @@
             "$date": "2016-02-10T22:45:38"
         }, 
         "updated_at": {
-            "$date": "2016-12-11T21:11:43"
+            "$date": "2017-01-24T02:20:21"
         }, 
         "files": true, 
         "fetch": [
             {
                 "name": "vmlinuz64", 
                 "url": "http://download.freenas.org/vm-templates/boot2docker/vmlinuz64.gz", 
-                "sha256": "37f94585199c8ecadd9227a0e7ed8bd4c26aaabc29ae0661e1d64e4d57c62e98", 
-                "size": 3631828, 
+                "sha256": "fa851ca55e6f43329fcfcc0696ab0a9e29bd0e9cfa380c4b55ec79e4547bbcb7",
+                "size": 3632225,
                 "dest": "grub"
             }, 
             {
                 "name": "initrd", 
                 "url": "http://download.freenas.org/vm-templates/boot2docker/initrd.img.gz", 
-                "sha256": "ab175053553a97bab67fa788c4bc803c641a6758ff54d47f6911a47df99ed895", 
-                "size": 43179522, 
+                "sha256": "c28942c448de8cd8b0989232ca2d8bd55083f124638dc629774b14c5535eb816",
+                "size": 43581406,
                 "dest": "grub"
             }
         ]
