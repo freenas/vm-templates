@@ -38,7 +38,9 @@
             "type": "NIC", 
             "name": "nic", 
             "properties": {
-                "mode": "BRIDGED"
+                "mode": "BRIDGED",
+                "bridge": "default",
+                "device": "VIRTIO"
             }
         }
     ], 
