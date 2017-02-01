@@ -7,14 +7,14 @@
             "$date": "2016-09-11T10:52:00"
         }, 
         "updated_at": {
-            "$date": "2017-01-14T00:47:00"
+            "$date": "2017-02-01T00:17:00"
         }, 
         "fetch": [
             {
                 "name": "os", 
                 "url": "http://download.freenas.org/vm-templates/freebsd-12-zfs/os.img.gz", 
-                "sha256": "f8771e78c8350fd119f8c3f9d40f139229edd629334f12217d31858566b67407",
-                "size": 745139955
+                "sha256": "c6f8070f23b550009b28b73af8f3478b381e8d951dc5353b5277dad9291bb487",
+                "size": 1657015858
             }
         ]
     }, 
