@@ -4,7 +4,12 @@ In this repo, you will find all of the "canned templates" for creating VMs
 on FreeNAS 10 - what you see when you use the ```vm template show``` command.
 
 ## Use an existing VM as a template
-* If you would like to use an already created VM as your template, stop the running VM and use dd as follows on the FreeBSD CLI
+If you would like to use an already created VM as your template do the following:
+```
+git clone https://github.com/freenas/vm-templates.git
+cd vm-templates.git
+```
+ * Stop the running VM and use dd on the FreeBSD CLI
 ```
 dd if=/dev/zvol/[pool name]/vm/[VM Name]/os of=/mnt/[pool name]/[storage location]/disk.img bs=2M
 ```
