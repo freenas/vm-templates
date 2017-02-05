@@ -37,12 +37,17 @@ truncate -s 16g disk.img
 sh /usr/share/examples/bhyve/vmrun.sh -c 1 -m 1024M -t tap0 -d disk.img -i -I FreeBSD-11.0-CURRENT-amd64-20160518-r300097-disc1.iso freebsd-current
 ```
 * At this point, FreeBSD's standard installer ran, the appropriate ZFS installation options were chosen, and I exited bhyve by selecting the loader prompt on the next reboot and typing "quit".  This dropped me back to the shell on the host OS, where I was next able to do:
-```
+
 * If you would like to skip the above steps and use an already created VM as your template, stop the running VM and use dd as follows on the FreeBSD CLI
 ```
 dd if=/dev/zvol/[pool name]/vm/[VM Name]/os of=/mnt/[pool name]/[storage location]/disk.img
+<<<<<<< HEAD
 ```
 * Transfer disk.img back to your build PC and continue as follows
+=======
+
+* Back on your build PC continue as follows
+>>>>>>> 9af1c5f... fixed markdown formatting
 ```
 mv disk.img os.img
 gzip -9 os.img
