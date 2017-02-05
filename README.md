@@ -42,7 +42,7 @@ sh /usr/share/examples/bhyve/vmrun.sh -c 1 -m 1024M -t tap0 -d disk.img -i -I Fr
 ```
 dd if=/dev/zvol/[pool name]/vm/[VM Name]/os of=/mnt/[pool name]/[storage location]/disk.img
 ```
-* Back on your build PC continue as follows
+* Transfer disk.img back to your build PC and continue as follows
 ```
 mv disk.img os.img
 gzip -9 os.img
