@@ -5,6 +5,7 @@ on FreeNAS 10 - what you see when you use the ```vm template show``` command.
 
 ## Use an existing VM as a template
 If you would like to use an already created VM as your template do the following:
+* Check out the repository
 ```
 git clone https://github.com/freenas/vm-templates.git
 cd vm-templates.git
