@@ -8,9 +8,10 @@ If you would like to use an already created VM as your template do the following
 * Check out the repository
 ```
 git clone https://github.com/freenas/vm-templates.git
-cd vm-templates.git
+cd vm-templates
 ```
- * Stop the running VM and use dd on the FreeBSD CLI
+* Copy and rename the folder from which your template was based on 
+* Stop the running VM and use dd on the FreeBSD CLI
 ```
 dd if=/dev/zvol/[pool name]/vm/[VM Name]/os of=/mnt/[pool name]/[storage location]/disk.img bs=2M
 ```
@@ -19,6 +20,7 @@ dd if=/dev/zvol/[pool name]/vm/[VM Name]/os of=/mnt/[pool name]/[storage locatio
 mv disk.img os.img
 gzip -9 os.img
 ```
+* This last little rename/compress step was just to conform with the same naming conventions as my source template, at which point I then edited the ```template.json``` file in the directory created previously to correctly reference this new image and edited some of the book-keeping fields to match, then I uploaded the os.img.gz file to the location specified in the ```url``` field (which could be any HTTP server you have access to) and filled in the ```sha256``` checksum field by running ```shasum -a 256 os.img.gz``` and pasting in the results.
 * Finally, commit the result to github with a git commit / git push, then add your github vm-templates repository under VM -> Settings in the form of https://github.com/[username]/vm-templates and voila! Your new template will now show up along with all the other templates.
 
 ## Manually create a new OS template from an existing template
