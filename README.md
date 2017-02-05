@@ -14,7 +14,7 @@ git clone https://github.com/freenas/vm-templates.git
 cd vm-templates.git
 ```
 
-* Next, I copied the template that looked the most like my target template.  In my case, since I was targetting another FreeBSD template, it was obvious enough to simply duplicate the existing FreeBSD 10.2-zfs template (a 10.2 install with the ZFS option selected).
+* Next, you have to acquire the template disk image, there are two ways of doing this: manual creation or copying an already created VM. I copied the template that looked the most like my target template. In my case, since I was targetting another FreeBSD template, it was obvious enough to simply duplicate the existing FreeBSD 10.2-zfs template (a 10.2 install with the ZFS option selected).
 ```
 cp -pr freebsd-10.2-zfs freebsd-11-zfs
 ```
@@ -38,12 +38,18 @@ sh /usr/share/examples/bhyve/vmrun.sh -c 1 -m 1024M -t tap0 -d disk.img -i -I Fr
 ```
 * At this point, FreeBSD's standard installer ran, the appropriate ZFS installation options were chosen, and I exited bhyve by selecting the loader prompt on the next reboot and typing "quit".  This dropped me back to the shell on the host OS, where I was next able to do:
 ```
+* If you would like to skip the above steps and use an already created VM as your template, stop the running VM and use dd as follows on the FreeBSD CLI
+```
+dd if=/dev/zvol/[pool name]/vm/[VM Name]/os of=/mnt/[pool name]/[storage location]/disk.img
+```
+* Back on your build PC continue as follows
+```
 mv disk.img os.img
 gzip -9 os.img
 ```
 This last little rename/compress step was just to conform with the same naming conventions as my source template, at which point I then edited the ```template.json``` file in my new freebsd-11-zfs direcory to correctly reference this new image and edited some of the book-keeping fields to match, then I uploaded the os.img.gz file to the location specified in the ```url``` field (which could be any HTTP server you have access to) and filled in the ```sha256``` checksum field by running ```shasum -a 256 os.img.gz``` and pasting in the results.
 
-* Finally, I committed the result to github with a git commit / git push, since as a FreeNAS committer I have write access (non-freenas project members would send us a pull request), and voila!  My FreeNAS 10 CLI now shows:
+* Finally, I committed the result to github with a git commit / git push, added my github vm-templates repository under VM -> Settings in the form of https://github.com/i[username]/vm-templates, rebooted FreeNAS and voila!  My FreeNAS 10 CLI now shows:
 
 ```
 unix::>vm template show
@@ -66,3 +72,5 @@ unix::>vm bleedingedge console
 ```
 
 Login is a root (no password), tada!  Running FreeBSD-current from this new template.
+
+Feel free to submit pull requests for new templates, but please note that we currently do not offer storage space for said templates so they will have to be self-hosted on a reliable server with 100% uptime in order for the template to be considered for inclusion.
