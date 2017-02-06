@@ -41,17 +41,8 @@ sh /usr/share/examples/bhyve/vmrun.sh -c 1 -m 1024M -t tap0 -d disk.img -i -I Fr
 * If you would like to skip the above steps and use an already created VM as your template, stop the running VM and use dd as follows on the FreeBSD CLI
 ```
 dd if=/dev/zvol/[pool name]/vm/[VM Name]/os of=/mnt/[pool name]/[storage location]/disk.img
-<<<<<<< HEAD
-<<<<<<< HEAD
 ```
 * Transfer disk.img back to your build PC and continue as follows
-=======
-
-=======
-```
->>>>>>> f87fef9... fixed more markdown formatting typos
-* Back on your build PC continue as follows
->>>>>>> 9af1c5f... fixed markdown formatting
 ```
 mv disk.img os.img
 gzip -9 os.img
