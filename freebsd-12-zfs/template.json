@@ -22,6 +22,7 @@
         "ncpus": 1,
         "bootloader": "BHYVELOAD", 
         "memsize": 1024,
+        "minmemsize": 512,
         "boot_device": "os"
     }, 
     "devices": [
