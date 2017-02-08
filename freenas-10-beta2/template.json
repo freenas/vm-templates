@@ -7,7 +7,7 @@
             "$date": "2016-11-30T01:20:21"
         }, 
         "updated_at": {
-            "$date": "2017-01-08T16:22:54"
+            "$date": "2016-11-30T01:20:21"
         }, 
         "fetch": [
             {
@@ -21,8 +21,7 @@
     "config": {
         "ncpus": 2, 
         "bootloader": "UEFI", 
-        "memsize": 4096,
-        "minmemsize": 2048,
+        "memsize": 4096, 
         "boot_device": "os"
     }, 
     "devices": [
