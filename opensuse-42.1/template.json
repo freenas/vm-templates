@@ -7,7 +7,7 @@
             "$date": "2016-05-25T23:59:44"
         }, 
         "updated_at": {
-            "$date": "2016-07-22T22:12:32"
+            "$date": "2017-01-08T16:22:54"
         }, 
         "files": true, 
         "fetch": [
@@ -22,7 +22,8 @@
     "config": {
         "ncpus": 1, 
         "bootloader": "GRUB", 
-        "memsize": 1024, 
+        "memsize": 1024,
+        "minmemsize": 1024,
         "boot_directory": "grub"
     }, 
     "devices": [

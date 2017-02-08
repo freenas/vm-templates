@@ -7,7 +7,7 @@
             "$date": "2016-02-10T22:45:38"
         }, 
         "updated_at": {
-            "$date": "2017-01-24T02:20:21"
+            "$date": "2017-01-08T16:22:54"
         }, 
         "files": true, 
         "fetch": [
@@ -31,7 +31,8 @@
         "docker_host": true, 
         "ncpus": 1, 
         "bootloader": "GRUB", 
-        "memsize": 2048, 
+        "memsize": 2048,
+        "minmemsize": 1024,
         "boot_directory": "grub", 
         "autostart": true
     }, 
