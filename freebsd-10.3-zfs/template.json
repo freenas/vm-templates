@@ -7,7 +7,7 @@
             "$date": "2016-05-24T09:44:48"
         }, 
         "updated_at": {
-            "$date": "2016-07-22T22:12:32"
+            "$date": "2017-01-08T16:22:54"
         }, 
         "fetch": [
             {
@@ -21,7 +21,8 @@
     "config": {
         "ncpus": 1, 
         "bootloader": "BHYVELOAD", 
-        "memsize": 1024, 
+        "memsize": 1024,
+        "minmemsize": 512,
         "boot_device": "os"
     }, 
     "devices": [

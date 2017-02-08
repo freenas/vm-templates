@@ -7,7 +7,7 @@
             "$date": "2016-09-29T16:22:54"
         }, 
         "updated_at": {
-            "$date": "2016-09-29T16:22:54"
+            "$date": "2017-01-08T16:22:54"
         }, 
         "fetch": [
             {
@@ -21,7 +21,8 @@
     "config": {
         "ncpus": 1, 
         "bootloader": "GRUB", 
-        "memsize": 1024, 
+        "memsize": 1024,
+        "minmemsize": 1024,
         "boot_device": "os", 
         "boot_partition": "msdos1"
     }, 
