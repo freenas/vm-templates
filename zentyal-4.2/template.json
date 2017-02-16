@@ -7,14 +7,14 @@
             "$date": "2016-09-29T16:22:54"
         }, 
         "updated_at": {
-            "$date": "2017-01-08T16:22:54"
+            "$date": "2017-02-13T1:24:54"
         }, 
         "fetch": [
             {
                 "name": "os", 
                 "url": "http://download.freenas.org/vm-templates/zentyal-4.2/os.img.gz", 
-                "sha256": "14c619dd99aed972f38477e3adf8b3640ab618c3933d615d6d0579884838b805",
-                "size": 1618831193
+                "sha256": "e0d1db1a4347f836e80ec7534b6fc83109847e9dfb4b08d21ce5e175b887fc12",
+                "size": 1615497119
             }
         ]
     }, 
