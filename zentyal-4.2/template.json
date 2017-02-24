@@ -21,7 +21,8 @@
     "config": {
         "ncpus": 1, 
         "bootloader": "GRUB", 
-        "memsize": 1024, 
+        "memsize": 1024,
+        "minmemsize": 1024,
         "boot_device": "os", 
         "boot_partition": "msdos1"
     }, 

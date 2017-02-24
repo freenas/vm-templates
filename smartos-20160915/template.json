@@ -7,7 +7,7 @@
             "$date": "2016-09-18T19:55:37"
         }, 
         "updated_at": {
-            "$date": "2016-09-19T07:55:43"
+            "$date": "2017-01-08T16:22:54"
         }, 
         "files": true,
         "fetch": [
@@ -29,7 +29,8 @@
     "config": {
         "ncpus": 2, 
         "bootloader": "UEFI_CSM", 
-        "memsize": 4096
+        "memsize": 2048,
+        "minmemsize": 1024
     }, 
     "devices": [
         {

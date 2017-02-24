@@ -31,7 +31,8 @@
         "docker_host": true, 
         "ncpus": 1, 
         "bootloader": "GRUB", 
-        "memsize": 2048, 
+        "memsize": 2048,
+        "minmemsize": 1024,
         "boot_directory": "grub", 
         "autostart": true
     }, 
