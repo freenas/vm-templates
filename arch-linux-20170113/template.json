@@ -13,8 +13,8 @@
             {
                 "name": "os", 
                 "url": "http://download.freenas.org/vm-templates/arch-linux-20170113/os.img.gz", 
-                "sha256": "7ab1f138c21ae81cb5dc7609777a6f5db16248d1deeb9dce1f86f286fc6bf00f",
-                "size": 861024894
+                "sha256": "7108a379efbb8a7e633964ca683f5d0106945a74c3bd26aff6049932400e6187",
+                "size": 862559690
             }
         ]
     }, 
