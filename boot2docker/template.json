@@ -21,8 +21,8 @@
             {
                 "name": "initrd", 
                 "url": "http://download.freenas.org/vm-templates/boot2docker/initrd.img.gz", 
-                "sha256": "bf6a46d2cf7964229fbf5d2ae15babc515dde63bd11607683879a4ad310c2f58",
-                "size": 43569919,
+                "sha256": "956be1b98a24a06825f1182840aaf302a7002df06e250e8bdeb3c51c906bc293",
+                "size": 43560677,
                 "dest": "grub"
             }
         ]
