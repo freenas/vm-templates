@@ -14,15 +14,15 @@
             {
                 "name": "vmlinuz64", 
                 "url": "http://download.freenas.org/vm-templates/boot2docker/vmlinuz64.gz", 
-                "sha256": "aece7155f22998117222bea0d868783f8d423b54604f064fd172162667b513bd",
-                "size": 3633055,
+                "sha256": "c12e1ff7058dee47793961975fe072298ffebe915b899c92d0a08964ca42b05b",
+                "size": 3632171,
                 "dest": "grub"
             }, 
             {
                 "name": "initrd", 
                 "url": "http://download.freenas.org/vm-templates/boot2docker/initrd.img.gz", 
-                "sha256": "f30614f01440277a7b4b47ed1ed5f79310f46f78d4e8f2e07d8eb13bb255b5b8",
-                "size": 43514213,
+                "sha256": "d3fe57d01131e9e50df1b7509e6b3d4127380c8bbf803037b150d9a4ecee3b24",
+                "size": 43586790,
                 "dest": "grub"
             }
         ]
