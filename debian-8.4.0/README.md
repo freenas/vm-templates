@@ -4,6 +4,7 @@
 Username: debian
 Password: debian
 ```
+(Root password is also ```debian```)
 
 ## Notes:
 
