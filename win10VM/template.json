@@ -1,0 +1,49 @@
+{
+    "template": {
+        "name": "win10VM", 
+        "author": "Sean Coston <sdcoston@gmail.com>", 
+        "description": "Win 10 VM", 
+        "created_at": {
+            "$date": "2017-03-02T21:30:00"
+        }, 
+        "updated_at": {
+            "$date": "2017-03-02T21:30:00"
+        }, 
+        "fetch": [
+            {
+                "name": "hd", 
+                "url": "https://thedistractedsurgeon.blogsite.org/winIMG/hd.img.gz", 
+                "sha256": "df500841776ce58e71198b8c8f227e5f631050125d6a20eb645d3069a5f42695",
+                "size": 30388864893
+            }
+        ]
+    }, 
+    "config": {
+        "ncpus": 2, 
+        "bootloader": "UEFI", 
+        "memsize": 4096,
+        "minmemsize": 1024,
+        "boot_device": "hd", 
+        "boot_partition": "msdos1"
+    }, 
+    "devices": [
+        {
+            "type": "DISK", 
+            "name": "hd", 
+            "properties": {
+                "mode": "AHCI", 
+                "source": "hd"
+            }
+        }, 
+        {
+            "type": "NIC", 
+            "name": "nic", 
+            "properties": {
+                "mode": "BRIDGED", 
+                "bridge": "default"
+            }
+        }
+    ], 
+    "guest_type": "windows64"
+}
+
