@@ -24,7 +24,6 @@
         "memsize": 4096,
         "minmemsize": 1024,
         "boot_device": "hd", 
-        "boot_partition": "msdos1"
     }, 
     "devices": [
         {
